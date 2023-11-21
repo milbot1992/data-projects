@@ -1,0 +1,27 @@
+.projects-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.projects-info {
+    text-align: right
+}
+
+.project-description {
+    margin-bottom: 30px
+}
+
+.visualising-text {
+    display: flex;
+    gap: 10px;
+    width: 500px;
+}
+
+.visualising-meteor-text{
+    color: rgb(119, 28, 66);
+}
+
+.bar-chart {
+    height: 600px;
+    width: 1400px
+}

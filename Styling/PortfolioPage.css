@@ -1,0 +1,36 @@
+.back-button {
+    font-size: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    color: rgb(119, 28, 66);
+}
+
+.back-button:hover {
+    background-color: rgb(207, 207, 207);
+}
+
+.portfolio-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.portfolio-info {
+    text-align: right
+}
+
+.portfolio-header {
+    margin-bottom: 20px
+}
+
+.portfolio-image {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.portfolio-article-subhead{
+    font-size: 24px
+}

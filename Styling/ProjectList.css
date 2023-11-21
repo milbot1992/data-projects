@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  overflow-x: hidden;
+  background-color: #f0f4f8;
+}
+
+
+h2 {
+  margin: 0px;
+  font-size: 35px;
+  color:rgb(7, 95, 107);
+}
+
+.project-list-container {
+  margin-top: 60px;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  list-style: none;
+  margin-left: -15px
+}
+
+.project-list-header{
+  margin-left: 36px
+}
+
+/* PortfolioCard */
+.portfolio-card {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 10px;
+  overflow: hidden;
+  background-color: #f7f7f7;
+  box-shadow: 0px 0px 5px 0px #998b8b;
+  transition: transform 0.2s ease-in-out;
+  position: relative;
+  height: 300px;
+  width: 80%;
+}
+
+.portfolio-card:hover {
+  transform: scale(1.03);
+}
+
+.portfolio-card img {
+  width: 400px;
+  height: 260px;
+  object-fit: cover;
+  margin: 20px;
+  padding-right: -20px;
+}
+
+/* Right-hand side content */
+.portfolio-card-content h2 {
+  font-weight: bold;
+  margin: 0;
+  color: #2b2828;
+  font-size: 1.6rem;
+  padding-right: 10px;
+  padding-top: 20px;
+  text-align: left;
+}
+
+.portfolio-card-content h4 {
+  color: #2c2c2c;
+  font-size: 1.2rem;
+  text-align: left;
+  text-transform: none;
+  padding-right: 0px;
+  margin-right: 15px;
+  margin-top: 20px;
+  padding-right: 10px;
+  font-weight: normal;
+}
+
+.portfolio-card-content p {
+  color: #555;
+  font-size: 1.3rem;
+  text-align: left;
+  text-transform: capitalize;
+  padding-right: 10px;
+}
+
+/* ProjectCards */
+.project-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px; 
+  margin: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  transition: transform 0.2s ease-in-out;
+  position: relative;
+  height: 200px;
+  width: 86%; 
+  padding: 20px
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+}
+
+.project-card img {
+  width: 200px;
+  height: 205px;
+  object-fit: cover;
+  margin-right: 10px;
+  padding-right: -20px;
+}
+
+/* Right-hand side content */
+.project-card-content h2 {
+  font-weight: bold;
+  margin: 0;
+  color: #2b2828;
+  font-size: 1.3rem;
+  padding-right: 10px;
+  text-align: left;
+}
+
+.project-card-content h4 {
+  font-weight: normal;
+  margin: 0;
+  color: #2b2828;
+  font-size: 1rem;
+  padding-right: 10px;
+  text-align: left;
+  margin-top: 20px
+}
+
+.project-card-content p {
+  color: #555;
+  font-size: 1rem;
+  text-align: left;
+  text-transform: capitalize;
+  padding-right: 10px;
+  text-decoration: none; 
+}
