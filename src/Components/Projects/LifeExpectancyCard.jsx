@@ -2,7 +2,7 @@ import formatDistanceToNow from 'date-fns/formatDistanceToNow';
 import LEGraph from '../../assets/LEgraph.png'
 
 export default function LifeExpectancyCard () {
-    const timeAgo = formatDistanceToNow(new Date("2023-11-16T11:13:00.000Z"), { addSuffix: true });
+    const timeAgo = formatDistanceToNow(new Date("2023-01-16T11:13:00.000Z"), { addSuffix: true });
     
     return (
         <section className="project-card">

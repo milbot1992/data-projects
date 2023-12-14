@@ -1,0 +1,41 @@
+.skills-intro {
+    width: 80%;
+    margin: 0 auto; 
+    margin-top: 30px;
+    padding-top: 10px;
+    color: rgb(64, 64, 64)
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px;
+    margin: 0 auto; 
+    width: 77%;
+    padding-bottom: 15px;
+    border: 2px solid rgb(28, 64, 119);
+    padding:20px;
+    padding-left:25px;
+}
+
+.skill-section {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.skills-image {
+    height: 100px;
+    width: 100px;
+    margin: 0 auto; 
+}
+
+.skills-text {
+    font-size: 16px;
+    color: rgb(64, 64, 64)
+}
+
+h4 {
+    color: rgb(64, 64, 64)
+}

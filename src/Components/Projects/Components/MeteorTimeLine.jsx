@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Bar } from 'react-chartjs-2';
 import 'chart.js/auto';
-import '../../../../Styling/ProjectPages.css'
+import '../../../../Styling/MeteorMap.css'
 
 const MeteorTimeline = ({ meteorList }) => {
     const [timelineData, setTimelineData] = useState({});
@@ -24,8 +24,8 @@ const MeteorTimeline = ({ meteorList }) => {
                 {
                     label: 'Meteor Landings per Year',
                     data: Object.values(counts),
-                    backgroundColor: 'rgba(75,192,192,0.2)',
-                    borderColor: 'rgba(75,192,192,1)',
+                    backgroundColor: '#87ACFC',
+                    borderColor: '#87ACFC',
                     borderWidth: 1,
                 },
             ],
@@ -40,7 +40,7 @@ const MeteorTimeline = ({ meteorList }) => {
 
     return (
         <div className="bar-chart">
-            <h3>Meteor Landings Timeline</h3>
+            <h3 className='timeline-header'>Meteor Landings Timeline</h3>
             {Object.keys(timelineData).length > 0 ? (
                 <Bar className='bar-chart' key={chartKey} data={timelineData} />
             ) : (

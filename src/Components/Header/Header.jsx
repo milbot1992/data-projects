@@ -1,21 +1,17 @@
 import React from 'react';
 import '../../../Styling/Header.css';
-import lightbulbImage from '../../assets/lightbulb.png'
-import { Link, useParams, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+import Mountains from '../../assets/Mountains.png'
 
-export default function Nav() {
+export default function Header() {
     return (
         <div className='header clearfix'>
+        <div className='header-image'>
+            <img src={Mountains} alt="Header Background"></img>
+        </div>
         <div className='header-content'>
             <h1 className='header-header'>Millie Ellis</h1>
-            <h2 className='header-header2'>Data Analyst / Developer</h2>
-            <h3 className='header-header3' >This is a portfolio website that I created to display various data projects that I have completed. This website shocases both my skills with development as I created this website using React (Javascript), as well as my data analyis and data science skills. Click below to read more about this portfolio site.</h3>
-            <Link to={`/portfolio`}>
-                <h2 className='click-here-button'>Click here</h2>
-            </Link>
-        </div>
-        <div className='header-image'>
-            <img src={lightbulbImage} alt="Header Background"></img>
+            <h2 className='header-header2'>Data Analysis / Science / Development</h2>
         </div>
         </div>
     );

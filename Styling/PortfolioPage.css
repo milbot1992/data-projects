@@ -3,24 +3,24 @@
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 5px;
-    color: rgb(119, 28, 66);
+    color:rgb(28, 64, 119);
 }
 
 .back-button:hover {
-    background-color: rgb(207, 207, 207);
+    background-color:#cfcfcf
 }
 
 .portfolio-container {
-    width: 90%;
-    margin: 0 auto;
+    width: 80%;
+    margin:0 auto
 }
 
 .portfolio-info {
-    text-align: right
+    text-align:right
 }
 
 .portfolio-header {
-    margin-bottom: 20px
+    margin-bottom:20px
 }
 
 .portfolio-image {
@@ -28,9 +28,40 @@
     margin: 0 auto;
     width: 100%;
     height: 450px;
-    object-fit: cover;
+    object-fit:cover
 }
 
-.portfolio-article-subhead{
-    font-size: 24px
+.portfolio-article-subhead {
+    font-size:24px
+}
+
+.portfolio-article-first {
+    font-size:20px
+}
+
+.portfolio-article-body {
+    font-size:18px
+}
+
+@media only screen and (max-width: 768px) {
+    .portfolio-image {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        height:200px
+    }
+
+    p {
+        font-size:13px
+    }
+
+    .portfolio-header {
+        font-size:20px
+    }
+
+    .portfolio-article-subhead, .portfolio-article-first {
+        font-size:18px
+    }
 }

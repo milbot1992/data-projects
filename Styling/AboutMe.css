@@ -1,0 +1,25 @@
+.about-grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr; 
+    gap: 30px; 
+    margin: 0 auto; 
+    width: 80%;
+}
+
+.about-intro {
+    margin: 0 auto; 
+    margin-top: 30px;
+    padding-top: 10px;
+}
+
+.about-image {
+    height: 400px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.about-background {
+    background-color: rgb(186, 214, 241);
+    margin-top: 80px
+}

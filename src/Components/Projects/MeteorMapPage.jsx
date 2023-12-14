@@ -5,7 +5,10 @@ import MeteorMap from './Components/MeteorMap';
 import Filters from './Components/Filters';
 import formatDistanceToNow from "date-fns/formatDistanceToNow";
 import { Link  } from "react-router-dom";
-import MeteorTimeline from './Components/MeteorTimeLine.jsx';
+import MeteorTimeline from './Components/MeteorTimeLine.jsx'
+import PaperClip from '../../assets/Paperclip.png'
+import Crane from '../../assets/Crane.png'
+import Arrow from '../../assets/arrow2.png'
 
 export default function MeteorMapPage() {
     const [meteorList, setMeteorList] = useState([]);
@@ -16,8 +19,8 @@ export default function MeteorMapPage() {
     const meteorCount = meteorList.length
 
     let timeAgo = "";
-    if (Date.parse("2023-11-19T11:13:00.000Z")) {
-        timeAgo = formatDistanceToNow(new Date("2023-11-19T11:13:00.000Z"), { addSuffix: true });
+    if (Date.parse("2023-10-19T11:13:00.000Z")) {
+        timeAgo = formatDistanceToNow(new Date("2023-10-19T11:13:00.000Z"), { addSuffix: true });
     }
 
     useEffect(() => {
@@ -37,8 +40,9 @@ export default function MeteorMapPage() {
         });
     }, [filterYear]);
 
-    const filteredHeaderText = filterYear === '' ? 'Map of All Recorded Meteor Landings' : `Map of Meteor Landings in ${filterYear}`;
-    const filteredListText = filterYear === '' ? 'List of All Recorded Meteor Landings' : `List of Meteor Landings in ${filterYear}`;
+
+
+    const filteredHeaderText = filterYear === '' ? '' : `Showing: Meteor Landings in ${filterYear}`;
 
     if (isLoading) return <p>Loading...</p>;
 
@@ -51,25 +55,63 @@ export default function MeteorMapPage() {
             <p className="time-ago">⏲️ {timeAgo}</p>
         </div>
         <h2>Meteor Landings</h2>
-        <p className='project-description'>Please browse below all recorded Meteor Landings across the world.</p>
-        <h3>Languages</h3>
-        <p>Javascript: React, React Hooks, React Router, Leaflet and React-Leaflet, Chart.js, CSS</p>
-        <h3>Data Processing</h3>
-        <p>Data Filtering and Manipulation: The useEffect hook is used to fetch meteor data, and there's logic to filter the data based on the selected year.</p>
-        <p>API Calls: The fetchMeteors function, which is assumed to be in the api.js file, is making API calls to retrieve meteor data.</p>
-        <h3>Data Source</h3>
-        <p className='project-description'>The data for this visualisation is from the NASA API: https://data.nasa.gov/resource/gh4g-9sfh.json</p>
-        <section>
-            <Filters setFilterYear={setFilterYear} setMeteorList = {setMeteorList} originalMeteorList = {originalMeteorList}/><br></br>
-        </section>
+        <br></br>
         <main className='main'>
-            <h3 className='main-h2'>{filteredHeaderText}</h3>
-            <div className='visualising-text'>
-            <h3>Visualising</h3><h3 className='visualising-meteor-text'>{meteorCount}</h3><h3> Meteor Landings</h3>
+            <p className='project-description'>Visualisation to show all recorded Meteor Landings across the world. Click any meteor point to view more information. Visualisations best viewed on a laptop.</p>
+            <div className='meteor-viewer'>
+                <div className='meteor-header-text'>
+                        <h3>Meteor Landings</h3>
+                </div>
+                    <div className='visualising-text'>
+                    <h3>Visualising</h3><h3 className='visualising-meteor-text'>{meteorCount}</h3><h3> Meteor Landings</h3>
+                </div>
+                <section>
+                    <Filters setFilterYear={setFilterYear} setMeteorList = {setMeteorList} originalMeteorList = {originalMeteorList}/><br></br>
+                </section>
+                <p className = 'filtered-header-text'>{filteredHeaderText}</p>
+                <MeteorMap meteorList={meteorList} />
+                <br></br><br></br>
+                <div className='meteor-section'>
+                    <MeteorTimeline meteorList={meteorList} />
+                    <img className='arrow' src={Arrow}></img>
+                    <div className='weight-section'>
+                        <div className='weight-subsection'>
+                            <div className='weight-content'>
+                                <h3 className='heaviest'>Heaviest</h3>
+                                <h3>Hoba</h3>
+                                <p>Namibia, 1920</p>
+                                <p>Weight: 60,000,000g</p>
+                            </div>
+                            <img className='weight-meteors-image-1' src={Crane} alt='PaperClip' />
+                        </div>
+
+                        <div className='weight-subsection'>
+                            <div className='weight-content'>
+                                <h3>Yamato 8333</h3>
+                                <p>Antarctica, 1983</p>
+                                <p>Weight: 0.01g</p>
+                                <h3 className='lightest'>Lightest</h3>
+                            </div>
+                            <img className='weight-meteors-image-2' src={PaperClip} alt='CrawlerCrane' />
+                        </div>
+                    </div>
+
+                </div>
             </div>
-            <MeteorMap meteorList={meteorList} />
-            <br></br><br></br>
-            <MeteorTimeline meteorList={meteorList} />
+            <br></br>
+            <h3>Key Information</h3>
+            <h3>Languages</h3>
+            <p>Javascript: React, React Hooks, React Router, Leaflet and React-Leaflet, Chart.js, CSS</p>
+
+            <h3>Data Processing</h3>
+            <h4>Data Filtering and Manipulation</h4>
+            <p>The data processing in this project involves fetching meteor data using the useEffect hook. Additionally, there's logic implemented to filter the data based on the selected year.</p>
+
+            <h4>API Calls</h4>
+            <p>The project utilises the fetchMeteors function, assumed to be in the api.js file, to make API calls and retrieve meteor data.</p>
+
+            <h3>Data Source</h3>
+            <p>The data for this visualisation is sourced from the NASA API: <a href="https://data.nasa.gov/resource/gh4g-9sfh.json" target="_blank">NASA Meteor Data API</a></p>
         </main>
         </div>
     );

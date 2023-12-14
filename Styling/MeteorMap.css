@@ -1,27 +1,310 @@
+.meteor-section {
+    display: grid;
+    grid-template-columns: 650px 80px 200px;
+    width: 60vw;
+    height: 420px;
+    gap: 50px;
+    padding-left:100px
+}
+
+.bar-chart-container {
+    width:35vw
+}
+
 .projects-container {
     width: 90%;
-    margin: 0 auto;
+    margin:0 auto
 }
 
 .projects-info {
-    text-align: right
+    text-align:right
 }
 
 .project-description {
-    margin-bottom: 30px
+    margin-bottom:30px
+}
+
+.meteor-header-text {
+    color: #fff;
+    font-size: 25px;
+    font-family:Trebuchet MS, sans-serif
+}
+
+.filter-text {
+    color: white;
+    margin-right: 10px
+}
+
+.search-button{
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .visualising-text {
     display: flex;
     gap: 10px;
-    width: 500px;
+    width: 390px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+    font-family:Trebuchet MS, sans-serif
 }
 
-.visualising-meteor-text{
-    color: rgb(119, 28, 66);
+.visualising-meteor-text {
+    color: #87acfc;
+    font-family:Trebuchet MS, sans-serif
 }
 
-.bar-chart {
-    height: 600px;
-    width: 1400px
+.meteor-text {
+    color:#fff
+}
+
+.meteor-viewer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: linear-gradient(200deg, #87ACFC 0%, #2b3a6d 3%, #0d1d53 8%, #081032 12%, #081032 65%, #0d1d53 85%, #0d1d53 100%);
+    width: 1200px;
+    align-items: center;
+    justify-content: center;
+    position:relative
+}
+
+.filtered-header-text {
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: -40px;
+    font-size: 15px;
+    font-family:Trebuchet MS, sans-serif
+}
+
+.arrow {
+    margin-left: -30px;
+    margin-top: -100px;
+    height: 440px;
+    margin-right:-100px
+}
+
+.heaviest {
+    margin-bottom: 70px;
+    margin-left: 50px;
+    color:#87acfc
+}
+
+.lightest {
+    margin-top: 67px;
+    margin-left: 93px;
+    color:#87acfc
+}
+
+.weight-section {
+    margin-top: -110px;
+    margin-left:-50px
+}
+
+.weight-subsection {
+    display: flex;
+    width: 400px;
+    color: #fff;
+    gap: 10px;
+    font-size: 15px;
+    font-family:Trebuchet MS, sans-serif
+}
+
+.weight-meteors-image-1 {
+    width: 90px;
+    height: 150px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    margin-left:10px
+}
+
+.weight-meteors-image-2 {
+    width: 80px;
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left:-10px
+}
+
+.timeline-header {
+    color: #fff;
+    font-family:Trebuchet MS, sans-serif
+}
+
+@media only screen and (max-width: 1700px) {
+    .meteor-section {
+        width: 67vw;
+        height: 420px;
+        grid-template-columns:600px 80px 200px
+    }
+}
+
+@media only screen and (max-width: 1550px) {
+    .meteor-section {
+        padding-left:110px
+    }
+}
+
+@media only screen and (max-width: 1550px) {
+    .meteor-section {
+        padding-left:60px
+    }
+}
+
+@media only screen and (max-width: 1450px) {
+    .meteor-section {
+        width: 65vw;
+        height: 420px;
+        grid-template-columns:500px 80px 200px
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .meteor-section {
+        width: 75vw;
+        height: 420px;
+        grid-template-columns:550px 80px 200px
+    }
+
+    .bar-chart-container {
+        width:40vw
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .meteor-viewer {
+        width:100%
+    }
+
+    .meteor-section {
+        width: 75vw;
+        height: 420px;
+        grid-template-columns:500px 80px 200px
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .meteor-section {
+        width: 78vw;
+        height: 420px;
+        grid-template-columns:450px 80px 200px
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .meteor-section {
+        margin-top: 20px;
+        grid-template-columns: 350px 80px 200px;
+        width:78vw
+    }
+
+    .bar-chart-container {
+        width:35vw
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .meteor-section {
+        height:320px
+    }
+
+    .bar-chart-container {
+        width: 600px;
+        height:300px
+    }
+
+    .weight-section, .arrow {
+        display:none
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .bar-chart-container {
+        width:600px
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .bar-chart-container {
+        width:600px
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .weight-section {
+        display:none
+    }
+
+    .meteor-section {
+        height:280px
+    }
+
+    .arrow {
+        display:none
+    }
+
+    .visualising-text {
+        font-size: 15px;
+        margin-left:90px
+    }
+
+    .bar-chart-container {
+        width:500px
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .meteor-section {
+        height:230px
+    }
+
+    .bar-chart-container {
+        width:400px
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .meteor-section {
+        height:180px
+    }
+
+    .bar-chart-container {
+        width: 300px;
+        margin-left:-10px
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .bar-chart-container {
+        margin-left:-30px
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .meteor-section {
+        height:200px
+    }
+
+    .leaflet-container {
+        zoom:.8
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .bar-chart-container {
+        margin-left:-50px
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .bar-chart-container {
+        margin-left:-60px
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .bar-chart-container {
+        margin-left:-70px
+    }
 }

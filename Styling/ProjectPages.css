@@ -1,34 +1,147 @@
-.projects-container {
-    width: 90%;
+.projects-page {
+    width: 80%;
+    margin: 0 auto
+}
+
+.tableau-DB {
+    width: 100%;
+}
+
+.dashboard-colour-banner {
+    background-color: rgb(186, 214, 241);
     margin: 0 auto;
 }
 
-.projects-info {
-    text-align: right
-}
-
-.project-description {
-    margin-bottom: 30px
+.dashboard-three {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+    margin: 0 auto; 
+    width: 90%;
+    padding-bottom: 20px;
+    padding-top: 10px
 }
 
 .jupyter-project {
-    border-color: black;
+    border-color: #000;
     border-width: 1px;
     padding: 10px;
-    background-color: white
+    background-color:#fff
 }
 
-.visualising-text {
+.d3-project {
+    width: 700px;
+    height: 700px;
+    overflow:hidden
+}
+
+h4 {
+    font-size: 16px;
+}
+
+p {
+    font-size: 16px
+}
+
+.bar-chart-container {
+    height: 550px;
+    width: 70%;
+    margin-bottom: 40px;
+    padding: 20px;
+    margin-left: -50px;
+    margin-top:-100px
+}
+
+.video-container {
     display: flex;
-    gap: 10px;
-    width: 500px;
-}
-
-.visualising-meteor-text{
-    color: rgb(119, 28, 66);
-}
-
-.bar-chart {
+    width: 90%;
     height: 600px;
-    width: 1400px
+    align-items: center;
+    justify-content:center
+}
+
+
+@media only screen and (max-width: 1500px) {
+    .video-container {
+        height: 400px;
+        margin-top:-20px
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .bar-chart-container {
+        width:800px
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .bar-chart-container {
+        width:700px
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .bar-chart-container {
+        width: 600px;
+        height:300px
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .bar-chart-container {
+        width:600px
+    }
+
+    .d3-project {
+        width: 400px;
+        height: 400px;
+        overflow:hidden
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .bar-chart-container {
+        width:600px
+    }
+
+    p {
+        font-size:16px
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .project-viewer {
+        width:95%
+    }
+
+    .mobile-view-news {
+        display:none
+    }
+
+    .video-container {
+        height: 200px;
+        margin-top: -15px;
+        width:100%
+    }
+
+    h2 {
+        font-size:23px
+    }
+
+    .bar-chart-container {
+        width:500px
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .bar-chart-container {
+        width:400px
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .bar-chart-container {
+        width: 300px;
+        margin-left:-10px
+    }
 }

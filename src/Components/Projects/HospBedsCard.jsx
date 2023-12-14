@@ -2,7 +2,7 @@ import formatDistanceToNow from 'date-fns/formatDistanceToNow';
 import HospBeds from '../../assets/HospBeds.png'
 
 export default function HospBedsCard () {
-    const timeAgo = formatDistanceToNow(new Date("2023-11-16T11:13:00.000Z"), { addSuffix: true });
+    const timeAgo = formatDistanceToNow(new Date("2022-11-16T11:13:00.000Z"), { addSuffix: true });
     
     return (
         <section className="project-card">

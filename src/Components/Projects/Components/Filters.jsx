@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import '../../../../Styling/ProjectPages.css';
+import '../../../../Styling/MeteorMap.css';
 
 function Filters({ setFilterYear, setMeteorList, originalMeteorList}) {
     const [userInput, setUserInput] = useState('');
@@ -17,7 +17,7 @@ function Filters({ setFilterYear, setMeteorList, originalMeteorList}) {
 
     return (
         <form className="filter-form" onSubmit={handleSubmit}>
-        <label htmlFor="year">Filter by Year:</label>
+        <label className = 'filter-text' htmlFor="year">Filter by Year:</label>
         <input
             type="text"
             id="year"
@@ -29,7 +29,7 @@ function Filters({ setFilterYear, setMeteorList, originalMeteorList}) {
                 }}
             style={{ width: '200px' }}
         />
-        <button type="submit">Search</button>
+        <button className='search-button' type="submit">Search</button>
         <button type="button" onClick={resetFilter}>Reset</button>
         </form>
     );

@@ -1,48 +1,64 @@
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Tahoma', 'Arial', sans-serif;
   overflow-x: hidden;
-  background-color: #f3f9ff;
+  background-color:white
 }
 
 a {
-  text-decoration: none;
+  text-decoration:none
+}
+
+p {
+  font-size:18px
 }
 
 .millie-ellis {
   margin-left: 10px;
-  padding: 0px
+  padding:0
 }
 
 nav {
-    background-color: rgb(206, 206, 255);
-    width: 200%;
-    overflow: hidden;
-  }
-  
+  background-color: #ceceff;
+  width: 200%;
+  overflow:hidden
+}
+
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-  
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow:hidden
+}
+
 nav li {
-    float: left;
-  }
-  
+  float:left
+}
+
 nav a {
-    display: block;
-    color: rgb(55, 55, 100);
-    font-weight: bold;
-    font-size: 20px;
-    text-align: center;
-    justify-content: center;
-    padding: 10px 16px;
-    text-decoration: none;
-  }
-  
+  display: block;
+  color: #373764;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+  padding: 10px 16px;
+  text-decoration:none
+}
+
 nav a:hover {
-    background-color: rgb(207, 207, 252);
-    color: black;
+  background-color: #cfcffc;
+  color:#000
+}
+
+@media only screen and (min-width: 601px) and(max-width: 900px) {
+  nav a {
+      font-size:18px
   }
+}
+
+@media only screen and (max-width: 600px) {
+  nav a {
+      font-size:16px
+  }
+}

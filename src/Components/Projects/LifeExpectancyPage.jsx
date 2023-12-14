@@ -4,8 +4,8 @@ import '../../../Styling/ProjectPages.css'
 
 export default function PortfolioPage() {
     let timeAgo = "";
-    if (Date.parse("2023-11-16T11:13:00.000Z")) {
-        timeAgo = formatDistanceToNow(new Date("2023-11-16T11:13:00.000Z"), { addSuffix: true });
+    if (Date.parse("2023-01-16T11:13:00.000Z")) {
+        timeAgo = formatDistanceToNow(new Date("2023-01-16T11:13:00.000Z"), { addSuffix: true });
     }
 
     return (
