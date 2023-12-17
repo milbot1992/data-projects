@@ -18,7 +18,7 @@ export default function ProjectList() {
             <Skills/>
             <AboutMe/>
             <div className="project-list-container">
-            <h4>PORTFOLIO</h4>
+            <h4 className='portfolio-header'>PORTFOLIO</h4>
                     <ul className="project-list">
                         <Link to={`/supermarketmetrics`}>
                             <StoreDashboardCard />

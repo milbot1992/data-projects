@@ -15,22 +15,34 @@ h2 {
   color:rgb(28, 64, 119);
 }
 
-.project-list-container{
-  width: 80%;
-  margin: 0 auto
+.portfolio-header {
+margin-left: 50px
+}
+
+.project-list-container {
+  margin-top:60px
 }
 
 .project-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr)
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  list-style: none;
+  margin-left:-15px;
 }
 
 .project-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin: 10px;
+  overflow: hidden;
   background-color: #fff;
   transition: transform .2s ease-in-out;
+  position: relative;
   height: 200px;
-  width: 300px;
-  margin: 10px
+  width: 86%;
+  padding:20px
 }
 
 .project-card:hover {
@@ -51,8 +63,7 @@ h2 {
   color: #2b2828;
   font-size: 1.3rem;
   padding-right: 10px;
-  text-align:left;
-  position: relative;
+  text-align:left
 }
 
 .project-card-content h4 {
@@ -74,6 +85,10 @@ h2 {
 }
 
 @media only screen and (max-width: 1500px) {
+  .project-list {
+      grid-template-columns:repeat(2, 1fr)
+  }
+
   .project-card-content h2 {
       font-size:1.2rem
   }

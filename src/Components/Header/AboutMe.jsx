@@ -13,7 +13,7 @@ export default function AboutMe() {
                         <p>I have always enjoyed problem-solving and working with formulas, and I have a strong ability to simplify intricate data projects and create innovative solutions.</p>
                         <p>I have over 7 years experience in analytical roles, leading project teams, working extensively with big data, automating processes, creating machine learning algorithms, maintaining data warehouses, constructing data models, and visualising data to provide key insights.</p>
                         <br></br>
-                        <p>If you would like to chat further please reach out to me by email.</p>
+                        <p>If you would like to chat further please reach out to me by email: ellismillie92@gmail.com</p>
                     </div>
                     <div>
                         <img className='about-image' src={Millie} alt="Image of site creator"></img>
