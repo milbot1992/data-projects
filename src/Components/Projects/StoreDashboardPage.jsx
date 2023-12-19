@@ -21,24 +21,24 @@ export default function StoreDashboardPage() {
             <h2>Global Supermarket Metrics Dashboard</h2>
             <p className='project-description'>The dashboard below is an example focusing on sales and profit of a global supermarket, visualising essential metrics and providing users with the autonomy to explore and analyse data independently. This particular dashboard, powered by Tableau, is tailored to reveal insights through dynamic filters and interactive features like tooltips. It allows users to actively engage with the information, offering a personalised and intuitive experience.</p>
 
-            <p className='project-description'>Screenshot of dashboard below and click <a href="https://public.tableau.com/app/profile/millie.ellis6600/viz/GlobalSuperstorePerformanceMetrics/Dashboard1?publish=yes" target="_blank">here</a> to navigate to interactive dashboard</p>
+            <p className='project-description'>Screenshot of the dashboard is below and click <a href="https://public.tableau.com/app/profile/millie.ellis6600/viz/GlobalSuperstorePerformanceMetrics/Dashboard1?publish=yes" target="_blank">here</a> to navigate to the interactive dashboard.</p>
         </div>
 
         <div className='dashboard-colour-banner'>
                 <div className='dashboard-three'>
                     <div>
                         <h4 className='dashboard-h4'>GOAL</h4>
-                        <p>The primary function of a dashboard is to provide a quick overview of key performance indicators (KPIs) and results. Dashboards offer an interactive means to assess the performance of a company or project at a glance.</p>
+                        <p className='SS-text'>The primary function of a dashboard is to provide a quick overview of key performance indicators (KPIs) and results. Dashboards offer an interactive means to assess the performance of a company or project at a glance.</p>
                     </div>
                     <div>
                         <h4 className='dashboard-h4'>RESULTS</h4>
-                        <p>Through using dashboards, you can effectively uncover insights. This user-friendly tool enables you to personally apply filters and refer to various graphs. Having instant access to accurate information facilitates informed decision-making.</p>
+                        <p className='SS-text'>Through using dashboards, you can effectively uncover insights. This user-friendly tool enables you to personally apply filters and refer to various graphs. Having instant access to accurate information facilitates informed decision-making.</p>
                     </div>
                     <div>
                         <h4 className='dashboard-h4'>DURATION</h4>
-                        <p>Typically, creating a dashboard takes 2 weeks to 2 months. This process has two phases:</p>
-                        <p>1. Selection of KPIs and dashboard design</p>
-                        <p>2. Gathering data and developing the dashboard</p>
+                        <p className='SS-text'>Typically, creating a dashboard takes 2 weeks to 2 months. This process has two phases:</p>
+                        <p className='SS-text'>1. Selection of KPIs and dashboard design</p>
+                        <p className='SS-text'>2. Gathering data and developing the dashboard</p>
                     </div>
                 </div>
         </div>

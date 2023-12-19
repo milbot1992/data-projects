@@ -11,7 +11,7 @@ export default function LifeExpectancyCard () {
         alt={`a photo to depict data and life expectancy`}
         />
         <div className="project-card-content">
-        <h2>Life Expectancy</h2>
+        <h2>Data Analysis: Life Expectancy</h2>
         <h4 className='project-card-desc'>An Exploratory Data Analysis project investigating Life Expectancy</h4>
         <p>⏲️{timeAgo}</p><br></br><br></br><br></br>
         </div>

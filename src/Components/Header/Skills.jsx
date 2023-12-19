@@ -13,8 +13,8 @@ export default function Skills() {
             <div className='skills-box'>
                 <div className='skills-intro'>
                 <h3 className='skills-title'>SKILLSET</h3>
-                <p>As a seasoned data analyst with extensive experience in data science, I specialise in translating intricate datasets into valuable and easily understandable insights.</p>
-                <p>With proficiency in machine learning, both supervised and unsupervised algorithms, I employ advanced analysis and visualisation techniques to effectively communicate results. My toolkit includes a diverse range of technologies such as SQL, R, Python, Javascript, and Tableau.</p>
+                <p className='skills-first'>As a seasoned data analyst with extensive experience in data science, I specialise in translating intricate datasets into valuable and easily understandable insights.</p>
+                <p className='skills-first'> With proficiency in machine learning, both supervised and unsupervised algorithms, I employ advanced analysis and visualisation techniques to effectively communicate results. My toolkit includes a diverse range of technologies such as SQL, R, Python, Javascript, and Tableau.</p>
                 <br></br>
                 </div>
                 <div className='skills-grid'>

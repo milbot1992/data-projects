@@ -42,7 +42,8 @@ margin-left: 50px
   position: relative;
   height: 200px;
   width: 86%;
-  padding:20px
+  padding:20px;
+  border: 1px solid rgb(224, 237, 255);
 }
 
 .project-card:hover {
@@ -148,10 +149,6 @@ margin-left: 50px
 }
 
 @media only screen and (max-width: 768px) {
-  .project-list {
-      grid-template-columns:repeat(1, 1fr)
-  }
-
   .project-card {
       height: 150px;
       width: 81%;

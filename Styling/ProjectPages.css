@@ -52,6 +52,25 @@ p {
     margin-top:-100px
 }
 
+.customer-seg-img {
+    width: 33%
+}
+
+.cluster-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    padding: 20px;
+    background-color: #f0f8ff; 
+}
+
+.cluster-info {
+    border: 1px solid #b0e0e6; 
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #fff; 
+}
+
 .video-container {
     display: flex;
     width: 90%;
@@ -130,6 +149,10 @@ p {
 
     .bar-chart-container {
         width:500px
+    }
+
+    .SS-text {
+        font-size: 14px
     }
 }
 

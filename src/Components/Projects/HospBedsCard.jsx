@@ -11,7 +11,7 @@ export default function HospBedsCard () {
         alt={`a photo of a graph showing change in hospital beds over time`}
         />
         <div className="project-card-content">
-        <h2>Hospital Beds</h2>
+        <h2>Data Analysis: Hospital Beds</h2>
         <h4 className='project-card-desc'>Analysis investigating how the number of hospital beds in England has changed over time</h4>
         <p>⏲️{timeAgo}</p><br></br><br></br><br></br>
         </div>

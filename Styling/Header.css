@@ -4,7 +4,6 @@
     left: 90px;
     opacity: 70%;
     background-color: white;
-    width: 50%;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -45,20 +44,27 @@
     margin-bottom: 15px
 }
 
-.header-header3 {
-    font-weight: normal;
-    font-size: 17px;
-    margin-bottom: 25px
-}
 
-.click-here-button {
-    font-size: 16px;
-    color:white;
-    background-color: rgb(123, 169, 192);
-    width: 100px;
-    border-radius: 7px;
-    border-width: 2px;
-    border-color: black;
-    padding: 10px;
-    text-align:center
+@media only screen and (max-width: 768px) {
+    .header-image {
+        height: 30vh;
+        width: 100%;
+        margin-right: 0px;
+        margin-top: 0px
+    }
+
+    .header-header {
+        font-size: 25px
+    }
+    
+    .header-header2 {
+        font-size: 15px;
+    }
+
+    .header-content {
+        position: absolute;
+        top: 25px;
+        left: 30px;
+
+    }
 }

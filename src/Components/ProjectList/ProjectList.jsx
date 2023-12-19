@@ -20,14 +20,14 @@ export default function ProjectList() {
             <div className="project-list-container">
             <h4 className='portfolio-header'>PORTFOLIO</h4>
                     <ul className="project-list">
+                        <Link to={`/clusteranalysis`}>
+                            <ClusterAnalysisCard />
+                        </Link>
                         <Link to={`/supermarketmetrics`}>
                             <StoreDashboardCard />
                         </Link>
                         <Link to={`/governmentspend`}>
                             <GovtSpendCard />
-                        </Link>
-                        <Link to={`/clusteranalysis`}>
-                            <ClusterAnalysisCard />
                         </Link>
                         <Link to={`/meteormap`}>
                             <MeteorMapCard />

@@ -39,3 +39,29 @@
 h4 {
     color: rgb(64, 64, 64)
 }
+
+@media only screen and (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(1, 1fr); 
+        width: 70%;
+        gap: 0px
+    }
+
+    .skills-image {
+        height: 60px;
+        width: 60px;
+    }
+
+    .skills-text {
+        font-size: 14px;
+        margin-top: -10px
+    }
+
+    .skills-first {
+        font-size: 14px
+    }
+
+    .skills-intro {
+        margin-top: -20px;
+    }
+}
