@@ -3,6 +3,10 @@
     margin: 0 auto
 }
 
+.projects-container {
+    width: 80%
+}
+
 .tableau-DB {
     width: 100%;
 }
@@ -56,6 +60,10 @@ p {
     width: 33%
 }
 
+.cluster-text {
+ font-size: 13px
+}
+
 .cluster-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
@@ -69,6 +77,10 @@ p {
     padding: 15px;
     border-radius: 8px;
     background-color: #fff; 
+}
+
+.LE-img {
+    width: 50%
 }
 
 .video-container {
@@ -121,6 +133,22 @@ p {
 @media only screen and (max-width: 800px) {
     .bar-chart-container {
         width:600px
+    }
+
+    .cluster-grid {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+
+    .customer-seg-img {
+        width: 70%
+    }
+
+    .LE-img {
+        width: 70%
+    }
+
+    .cluster-text {
+        font-size: 14px
     }
 
     p {

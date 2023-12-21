@@ -2,6 +2,7 @@ import formatDistanceToNow from "date-fns/formatDistanceToNow";
 import { Link  } from "react-router-dom";
 import '../../../Styling/ProjectPages.css'
 import CircleChart from "./Components/CircleChart";
+import React, { useEffect } from 'react';
 
 export default function GovtSpendPage() {
     let timeAgo = "";
@@ -9,8 +10,12 @@ export default function GovtSpendPage() {
         timeAgo = formatDistanceToNow(new Date("2023-12-01T11:13:00.000Z"), { addSuffix: true });
     }
 
+    useEffect(() => {
+      window.scrollTo(0, 0)
+    }, [])
+
     return (
-        <div className='projects-container'>
+        <div className='projects-page'>
         <Link to="/" className="back-button">
             &laquo;
         </Link>

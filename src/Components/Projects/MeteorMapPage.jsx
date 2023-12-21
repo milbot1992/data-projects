@@ -24,6 +24,10 @@ export default function MeteorMapPage() {
     }
 
     useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+
+    useEffect(() => {
         fetchMeteors()
         .then((meteorData) => {
             setOriginalMeteorList(meteorData)
@@ -100,17 +104,17 @@ export default function MeteorMapPage() {
             </div>
             <br></br>
             <h3>Key Information</h3>
-            <h3>Languages</h3>
+            <h4>Languages</h4>
             <p>Javascript: React, React Hooks, React Router, Leaflet and React-Leaflet, Chart.js, CSS</p>
 
-            <h3>Data Processing</h3>
-            <h4>Data Filtering and Manipulation</h4>
+            <h4>Data Processing</h4>
+            <h5>Data Filtering and Manipulation</h5>
             <p>The data processing in this project involves fetching meteor data using the useEffect hook. Additionally, there's logic implemented to filter the data based on the selected year.</p>
 
             <h4>API Calls</h4>
             <p>The project utilises the fetchMeteors function, assumed to be in the api.js file, to make API calls and retrieve meteor data.</p>
 
-            <h3>Data Source</h3>
+            <h4>Data Source</h4>
             <p>The data for this visualisation is sourced from the NASA API: <a href="https://data.nasa.gov/resource/gh4g-9sfh.json" target="_blank">NASA Meteor Data API</a></p>
         </main>
         </div>

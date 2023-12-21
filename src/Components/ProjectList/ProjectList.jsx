@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import LifeExpectancyCard from '../Projects/LifeExpectancyCard'
-import HospBedsCard from "../Projects/HospBedsCard";
 import '../../../Styling/ProjectList.css'
 import Header from '../Header/Header'
 import ClusterAnalysisCard from "../Projects/ClusterAnalysisCard";
@@ -9,6 +8,7 @@ import GovtSpendCard from "../Projects/GovtSpendCard";
 import StoreDashboardCard from "../Projects/StoreDashboardCard";
 import Skills from "../Header/Skills";
 import AboutMe from "../Header/AboutMe";
+import FreeStrokeCard from "../Projects/FreeStrokeCard";
 
 export default function ProjectList() {
     
@@ -32,11 +32,11 @@ export default function ProjectList() {
                         <Link to={`/meteormap`}>
                             <MeteorMapCard />
                         </Link>
+                        <Link to={`/freestroke`}>
+                            <FreeStrokeCard />
+                        </Link>
                         <Link to={`/lifeexpectancy`}>
                             <LifeExpectancyCard />
-                        </Link>
-                        <Link to={`/hospitalbeds`}>
-                            <HospBedsCard />
                         </Link>
                     </ul>
             </div>

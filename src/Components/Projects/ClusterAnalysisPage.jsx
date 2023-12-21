@@ -1,8 +1,8 @@
 import formatDistanceToNow from "date-fns/formatDistanceToNow";
 import { Link  } from "react-router-dom";
+import React, { useEffect } from 'react';
 import '../../../Styling/ProjectPages.css'
 import Boxplots from '../../assets/Boxplots.png'
-import Elbow from '../../assets/Elbow.png'
 import Cluster from '../../assets/PCA.png'
 import Spend from '../../assets/Spend.png'
 
@@ -13,8 +13,12 @@ export default function ClusterAnalysisPage() {
         timeAgo = formatDistanceToNow(new Date("2023-12-17T11:13:00.000Z"), { addSuffix: true });
     }
 
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+
     return (
-        <div className='projects-container'>
+        <div className='projects-page'>
         <Link to="/" className="back-button">
             &laquo;
         </Link>
@@ -23,8 +27,14 @@ export default function ClusterAnalysisPage() {
         </div>
         <h2>Customer Segmentation using a Clustering Model</h2>
         <p className='project-description'>
-            This analysis aims to identify distinct customer groups, enabling businesses to customise products based on unique traits, behaviours, and concerns. 
+        <h4>Objective</h4>
+        <p>This analysis aims to identify distinct customer groups, enabling businesses to customise products based on unique traits, behaviours, and concerns. 
             Segmenting customers aids tailored product offerings, optimising resources by directing marketing efforts towards receptive groups for increased efficiency and responsiveness.</p>
+        </p>
+        <h4>Methodology</h4>
+        <p>Utilisation of Python for data analysis, clustering, and campaign optimisation. Employing Pandas for data manipulation, NumPy for numerical operations, Scikit-learn for clustering algorithms, and visualising insights with Matplotlib and Seaborn.</p>
+
+        
         <h3>Key Steps</h3>
         <h4>Principal Component Analysis (PCA)</h4>
         <p>Technique for diminishing the dimensionality of datasets. It's objective is to increase interpretability while simultaneously minimising the loss of information.</p>
@@ -56,45 +66,45 @@ export default function ClusterAnalysisPage() {
         <div class="cluster-grid">
             <div class="cluster-info" id="cluster-0">
                 <h3>Cluster 0:</h3>
-                <p>Are not parents</p>
-                <p>High income group</p>
-                <p>Second highest spending group</p>
-                <p>Relatively older</p>
-                <p>Customer largely for groceries: fish, meat, fruits</p>
+                <p className='cluster-text'>Are not parents</p>
+                <p className='cluster-text'>High income group</p>
+                <p className='cluster-text'>Second highest spending group</p>
+                <p className='cluster-text'>Relatively older</p>
+                <p className='cluster-text'>Customer largely for groceries: fish, meat, fruits</p>
             </div>
 
             <div class="cluster-info" id="cluster-1">
                 <h3>Cluster 1:</h3>
-                <p>Are parents</p>
-                <p>Relatively younger</p>
-                <p>Lowest spending group</p>
-                <p>Lowest income</p>
+                <p className='cluster-text'>Are parents</p>
+                <p className='cluster-text'>Relatively younger</p>
+                <p className='cluster-text'>Lowest spending group</p>
+                <p className='cluster-text'>Lowest income</p>
             </div>
 
             <div class="cluster-info" id="cluster-2">
                 <h3>Cluster 2:</h3>
-                <p>Are parents</p>
-                <p>Relatively higher age</p>
-                <p>Mid income group</p>
-                <p>Mid spend group</p>
-                <p>Highest total purchases</p>
-                <p>Highest deals purchased</p>
+                <p className='cluster-text'>Are parents</p>
+                <p className='cluster-text'>Relatively higher age</p>
+                <p className='cluster-text'>Mid income group</p>
+                <p className='cluster-text'>Mid spend group</p>
+                <p className='cluster-text'>Highest total purchases</p>
+                <p className='cluster-text'>Highest deals purchased</p>
             </div>
 
             <div class="cluster-info" id="cluster-3">
                 <h3>Cluster 3:</h3>
-                <p>Are not parents</p>
-                <p>Highest income</p>
-                <p>Highest spending group</p>
-                <p>Customer largely for groceries and wines</p>
+                <p className='cluster-text'>Are not parents</p>
+                <p className='cluster-text'>Highest income</p>
+                <p className='cluster-text'>Highest spending group</p>
+                <p className='cluster-text'>Customer largely for groceries and wines</p>
             </div>
 
             <div class="cluster-info" id="cluster-4">
                 <h3>Cluster 4:</h3>
-                <p>Are parents</p>
-                <p>Lower end of spending</p>
-                <p>Lower end of income</p>
-                <p>Mid range age group</p>
+                <p className='cluster-text'>Are parents</p>
+                <p className='cluster-text'>Lower end of spending</p>
+                <p className='cluster-text'>Lower end of income</p>
+                <p className='cluster-text'>Mid range age group</p>
             </div>
         </div>
         <br></br><br></br>
@@ -105,16 +115,12 @@ export default function ClusterAnalysisPage() {
                 title="Jupyter Notebook"
                 width="100%"
                 height="500px"
-                src="https://nbviewer.org/github/milbot1992/dataanalytics/blob/main/Marketing%20Campaign%20Customer%20Segmentation.ipynb"
+                src="https://nbviewer.org/github/milbot1992/dataanalytics/blob/main/Customer%20Segmentation%20-%20Clustering.ipynb"
                 frameBorder="0"
                 allowFullScreen
             />
             
         <h3>Key Information</h3>
-        <h4>Objective</h4>
-        <p>Conduct a comprehensive Customer Segmentation Analysis to identify distinct customer groups, guiding targeted marketing campaigns for increased efficiency and responsiveness.</p>
-        <h4>Methodology</h4>
-        <p>Utilization of Python for data analysis, clustering, and campaign optimisation. Employing Pandas for data manipulation, NumPy for numerical operations, Scikit-learn for clustering algorithms, and visualising insights with Matplotlib and Seaborn.</p>
         <h4>Value Proposition</h4>
         <ul>
             <li>Segmentation Insights</li>

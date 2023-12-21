@@ -2,12 +2,17 @@ import formatDistanceToNow from "date-fns/formatDistanceToNow";
 import { Link  } from "react-router-dom";
 import '../../../Styling/ProjectPages.css'
 import DBImage from '../../assets/FullDB.png'
+import React, { useEffect } from 'react';
 
 export default function StoreDashboardPage() {
     let timeAgo = "";
     if (Date.parse("2023-12-11T11:13:00.000Z")) {
         timeAgo = formatDistanceToNow(new Date("2023-12-11T11:13:00.000Z"), { addSuffix: true });
     }
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
 
     return (
         <div className='projects-page'>
