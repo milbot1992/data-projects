@@ -8,6 +8,7 @@ import MeteorMapPage from "./Components/Projects/MeteorMapPage.jsx";
 import GovtSpendPage from "./Components/Projects/GovtSpentPage.jsx";
 import StoreDashboardPage from "./Components/Projects/StoreDashboardPage.jsx";
 import FreeStrokePage from "./Components/Projects/FreeStrokePage.jsx";
+import CarbonEmissionsPage from "./Components/Projects/CarbonEmissionsPage.jsx";
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
           <Route path="/clusteranalysis" element={<ClusterAnalysisPage/>} />
           <Route path="/lifeexpectancy" element={<LifeExpectancyPage/>} />
           <Route path="/freestroke" element={<FreeStrokePage/>} />
+          <Route path="/carbonemissions" element={<CarbonEmissionsPage/>} />
           <Route path="/meteormap" element={<MeteorMapPage/>} />
         </Routes>
       </div>

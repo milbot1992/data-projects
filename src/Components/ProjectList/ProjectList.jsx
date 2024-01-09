@@ -9,6 +9,7 @@ import StoreDashboardCard from "../Projects/StoreDashboardCard";
 import Skills from "../Header/Skills";
 import AboutMe from "../Header/AboutMe";
 import FreeStrokeCard from "../Projects/FreeStrokeCard";
+import CarbonEmissionsCard from "../Projects/CarbonEmissionsCard";
 
 export default function ProjectList() {
     
@@ -20,6 +21,9 @@ export default function ProjectList() {
             <div className="project-list-container">
             <h4 className='portfolio-header'>PORTFOLIO</h4>
                     <ul className="project-list">
+                        <Link to={`/carbonemissions`}>
+                            <CarbonEmissionsCard />
+                        </Link>
                         <Link to={`/clusteranalysis`}>
                             <ClusterAnalysisCard />
                         </Link>
