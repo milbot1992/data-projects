@@ -6,18 +6,20 @@ import ClusterAnalysisCard from "../Projects/ClusterAnalysisCard";
 import MeteorMapCard from "../Projects/MeteorMapCard";
 import GovtSpendCard from "../Projects/GovtSpendCard";
 import StoreDashboardCard from "../Projects/StoreDashboardCard";
-import Skills from "../Header/Skills";
+import Skills from "../Header/SkillsGrid";
 import AboutMe from "../Header/AboutMe";
 import FreeStrokeCard from "../Projects/FreeStrokeCard";
 import CarbonEmissionsCard from "../Projects/CarbonEmissionsCard";
+import Nav from "../Header/Nav";
 
 export default function ProjectList() {
     
     return (
         <>
+            <Nav/>
             <Header />
-            <Skills/>
-            <AboutMe/>
+            <Skills id='skills'/>
+            <AboutMe id='about'/>
             <div className="project-list-container">
             <h4 className='portfolio-header'>PORTFOLIO</h4>
                     <ul className="project-list">

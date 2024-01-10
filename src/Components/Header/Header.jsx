@@ -1,18 +1,35 @@
 import React from 'react';
+import Lottie from 'react-lottie';
+import animationData from '../../assets/Animation.json';
 import '../../../Styling/Header.css';
-import { Link } from "react-router-dom";
-import Mountains from '../../assets/Mountains.png'
 
 export default function Header() {
-    return (
+  const lottieOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice',
+    },
+  };
+
+  return (
+    <div className='background-header'>
         <div className='header clearfix'>
         <div className='header-image'>
-            <img src={Mountains} alt="Header Background"></img>
+            <Lottie options={lottieOptions} />
         </div>
         <div className='header-content'>
             <h1 className='header-header'>Millie Ellis</h1>
-            <h2 className='header-header2'>Data Analysis / Science / Development</h2>
+            <h2 className='header-header2'>Data Analysis / Science</h2>
+            <h2 className='header-header2'>/ Development</h2>
+            <h2 className='header-header2'>_____</h2>
+
+            <p className='intro1'>I specialise in translating intricate datasets into valuable and easily understandable insights.</p>
+            <p className='intro2'>I employ advanced analysis and visualisation techniques to effectively communicate results. My toolkit includes a diverse range of technologies including Tableau, Power BI, JavaScript (React, d3.js, Chart.js, Leaflet.js), HTML, CSS, Python, Adobe Illustrator and After Effects.</p>
+            <br></br>
         </div>
         </div>
-    );
+    </div>
+  );
 }

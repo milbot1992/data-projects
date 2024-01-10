@@ -1,16 +1,19 @@
+.background-header {
+    background-color: rgb(186, 214, 241);
+    height: 950px
+}
+
 .header-content {
     position: absolute;
     top: 90px;
     left: 90px;
-    opacity: 70%;
-    background-color: white;
     padding: 20px;
     box-sizing: border-box;
 }
 
 .header-image {
     float: right;
-    width: 93%;
+    width: 50%;
     overflow: hidden;
     position: relative;
     height: 87vh;
@@ -31,17 +34,31 @@
 }
 
 .header-header {
-    color:rgb(28, 64, 119);
+    color:#515aa4;
     padding: 0px;
     margin-bottom: 0px;
-    font-size: 45px
+    font-size: 90px;
+    margin-top: 240px
 }
 
 .header-header2 {
     margin: 0px;
-    font-size: 30px;
-    color:rgb(123, 169, 192);
+    font-size: 50px;
+    color:white;
     margin-bottom: 15px
+}
+
+.intro1 {
+    font-size: 20px;
+    margin-top: 80px;
+    color: #515aa4;
+    width: 70%
+}
+
+.intro2 {
+    font-size: 20px;
+    color: #515aa4;
+    width: 70%
 }
 
 

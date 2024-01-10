@@ -4,16 +4,18 @@
     gap: 30px; 
     margin: 0 auto; 
     width: 80%;
+    margin-top: 50px;
+    margin-bottom: 100px
 }
 
 .about-intro {
     margin: 0 auto; 
-    margin-top: 30px;
+    margin-top: 20px;
     padding-top: 10px;
 }
 
 .about-image {
-    height: 400px;
+    height: 300px;
     margin-top: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
