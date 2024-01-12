@@ -13,7 +13,7 @@ export default function ClusterAnalysisCard () {
         <div className="project-card-content">
         <h2>Machine Learning: Cluster Analysis</h2>
         <h4 className='project-card-desc'>Customer Segmentation Analysis to aid more targeted and effective marketing strategies.</h4>
-        <p>⏲️{timeAgo}</p><br></br><br></br><br></br>
+        <p>⏲️ {timeAgo}</p><br></br><br></br><br></br>
         </div>
     </section>
     );

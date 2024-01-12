@@ -21,12 +21,13 @@ export default function Header() {
         </div>
         <div className='header-content'>
             <h1 className='header-header'>Millie Ellis</h1>
-            <h2 className='header-header2'>Data Analysis / Science</h2>
-            <h2 className='header-header2'>/ Development</h2>
+            <h2 className='header-header2'>Data Analysis</h2>
+            <h2 className='header-header2'>Data Science</h2>
+            <h2 className='header-header2'>Development</h2>
             <h2 className='header-header2'>_____</h2>
 
             <p className='intro1'>I specialise in translating intricate datasets into valuable and easily understandable insights.</p>
-            <p className='intro2'>I employ advanced analysis and visualisation techniques to effectively communicate results. My toolkit includes a diverse range of technologies including Tableau, Power BI, JavaScript (React, d3.js, Chart.js, Leaflet.js), HTML, CSS, Python, Adobe Illustrator and After Effects.</p>
+            <p className='intro2'>I employ advanced analysis and visualisation techniques to effectively communicate results. My toolkit includes a diverse range of technologies including Tableau, Power BI, Python, JavaScript (React, d3.js, Chart.js, Leaflet.js), HTML, CSS, Adobe Illustrator and After Effects.</p>
             <br></br>
         </div>
         </div>

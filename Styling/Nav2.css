@@ -1,0 +1,67 @@
+.nav2 {
+  background-color: rgb(186, 214, 241);
+}
+
+.nav2 li:hover {
+  color: rgb(255, 255, 255);
+}
+
+.nav2 a:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(186, 214, 241);
+}
+
+.menu-icon2{
+  display: none
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-title {
+    display: none
+  }
+
+  .git-icon {
+    display: none
+  }
+
+  .linked-icon{
+    display:none
+  }
+
+  .menu-icon2{
+    display: block;
+    position: fixed;
+    top: 13px;
+    right: 22px;
+    height: 20px;
+    color: rgb(255, 255, 255);
+    z-index: 1002
+  }
+
+  .popup-menu {
+    position: fixed;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    height: 90%;
+    background-color: white;
+    z-index: 1001; 
+    display: flex;
+    flex-direction: column;
+    padding: 20px; 
+  }
+  
+  .menu-item {
+    color: black;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+  
+  .menu-item:hover {
+    background-color: white;
+    color: rgb(186, 214, 241);
+  }
+}

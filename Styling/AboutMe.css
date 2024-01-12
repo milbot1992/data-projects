@@ -1,6 +1,6 @@
 .about-grid {
     display: grid;
-    grid-template-columns: 3fr 1fr; 
+    grid-template-columns: 4.2fr 0.8fr; 
     gap: 30px; 
     margin: 0 auto; 
     width: 80%;
@@ -27,9 +27,14 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: 5fr 1fr; 
+    }
+    
     .about-image {
-        height: 200px;
-        margin-top: 60px
+        height: 150px;
+        margin-top: 70px;
+        margin-right: -10px
     }
 
     .about-text {

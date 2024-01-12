@@ -12,8 +12,8 @@ export default function GovtSpendCard () {
         />
         <div className="project-card-content">
         <h2>Data Visualisation: Government Spending</h2>
-        <h4 className='project-card-desc'>An Interactive zoomable data visualistion circle chart created using d3.js to visualise Government spending in 2022/23</h4>
-        <p>⏲️{timeAgo}</p><br></br><br></br><br></br>
+        <h4 className='project-card-desc'>An interactive zoomable circle chart created using d3.js to visualise annual Government spending</h4>
+        <p>⏲️ {timeAgo}</p><br></br><br></br><br></br>
         </div>
     </section>
     );

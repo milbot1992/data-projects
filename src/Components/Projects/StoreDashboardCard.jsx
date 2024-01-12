@@ -13,7 +13,7 @@ export default function StoreDashboardCard () {
         <div className="project-card-content">
         <h2>Interactive Dashboard: Global Supermarket Metrics</h2>
         <h4 className='project-card-desc'>Interactive dashboard created using Tableau to show key metrics</h4>
-        <p>⏲️{timeAgo}</p><br></br><br></br><br></br>
+        <p>⏲️ {timeAgo}</p><br></br><br></br><br></br>
         </div>
     </section>
     );

@@ -9,6 +9,10 @@ html {
   overflow-x:hidden
 }
 
+.portfolio-examples{
+  width: 100%
+}
+
 h2 {
   margin: 0;
   font-size: 35px;

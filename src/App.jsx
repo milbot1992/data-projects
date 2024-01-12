@@ -1,7 +1,7 @@
 import "../Styling/App.css";
 import { Routes, Route } from "react-router-dom";
 import PortfolioPage from "./Components/PortfolioSummary/PortfolioPage";
-import ProjectList from "./Components/ProjectList/ProjectList.jsx";
+import MainPage from "./Components/MainPage/MainPage.jsx";
 import LifeExpectancyPage from './Components/Projects/LifeExpectancyPage.jsx'
 import ClusterAnalysisPage from "./Components/Projects/ClusterAnalysisPage.jsx";
 import MeteorMapPage from "./Components/Projects/MeteorMapPage.jsx";
@@ -16,7 +16,7 @@ function App() {
     <>
       <div className = 'content-container'>
         <Routes>
-          <Route path="/" element={<ProjectList/>} />
+          <Route path="/" element={<MainPage/>} />
           <Route path="/portfolio" element={<PortfolioPage/>} />
           <Route path="/governmentspend" element={<GovtSpendPage/>} />
           <Route path="/supermarketmetrics" element={<StoreDashboardPage/>} />

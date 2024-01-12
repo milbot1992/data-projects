@@ -13,7 +13,7 @@ export default function CarbonEmissionsCard () {
         <div className="project-card-content">
         <h2>Data Visualisation: Carbon Emissions</h2>
         <h4 className='project-card-desc'>Carbon Emissions visualised by country each year since 1970.</h4>
-        <p>⏲️{timeAgo}</p><br></br><br></br><br></br>
+        <p>⏲️ {timeAgo}</p><br></br><br></br><br></br>
         </div>
     </section>
     );

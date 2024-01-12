@@ -22,7 +22,7 @@ export default function SkillsGrid() {
                                     <img className='skills-image' src={DataAnalysis} alt="Image depicting data analysis"></img>
                                 </div>
                                 <div>
-                                    <h4>Data analysis</h4>
+                                    <h4>Data Analysis</h4>
                                     <p className='skills-text'>I specialise in extracting valuable insights from data, distilling them into clear and concise reports or tools. My expertise lies in presenting results, identifying trends, and offering well-defined recommendations.</p>
                                 </div>
                             </div>
@@ -50,7 +50,7 @@ export default function SkillsGrid() {
                                 </div>
                                 <div>
                                     <h4>Data Visualisations</h4>
-                                    <p className='skills-text'>My expertise in data visualisation centers on harnessing sophisticated techniques to craft compelling and informative visual representations. I excel in translating intricate datasets into visually accessible formats,</p>
+                                    <p className='skills-text'>I am able to use a wide range of tools including Tableau, Javascript (d3.js, Chart.js, Leaflet.js), Python, and Adobe Illustrator to craft engaging and informative visual representations.</p>
                                 </div>
                             </div>
                         </div>

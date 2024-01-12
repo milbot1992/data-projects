@@ -13,7 +13,7 @@ export default function MeteorMapCard () {
         <div className="project-card-content">
         <h2>Data Visualisation: Meteor Landings</h2>
         <h4 className='project-card-desc'>Using API meteor landing data to create a visual map</h4>
-        <p>⏲️{timeAgo}</p><br></br><br></br><br></br>
+        <p>⏲️ {timeAgo}</p><br></br><br></br><br></br>
         </div>
     </section>
     );
