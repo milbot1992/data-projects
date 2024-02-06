@@ -1,15 +1,10 @@
-import formatDistanceToNow from "date-fns/formatDistanceToNow";
 import { Link  } from "react-router-dom";
 import '../../../Styling/ProjectPages.css'
 import CircleChart from "./Components/CircleChart";
 import React, { useEffect } from 'react';
 
 export default function GovtSpendPage() {
-    let timeAgo = "";
-    if (Date.parse("2023-12-01T11:13:00.000Z")) {
-        timeAgo = formatDistanceToNow(new Date("2023-12-01T11:13:00.000Z"), { addSuffix: true });
-    }
-
+  
     useEffect(() => {
       window.scrollTo(0, 0)
     }, [])
@@ -20,7 +15,7 @@ export default function GovtSpendPage() {
             &laquo;
         </Link>
         <div className="projects-info">
-            <p className="time-ago">⏲️ {timeAgo}</p>
+          <br></br><br></br>
         </div>
         <h2>Government Spending Data Visualisation</h2>
         <p className='project-description'>Visualisation showing Government Spending in 2022-23, created using d3.js.</p>

@@ -44,18 +44,18 @@ export default function Nav() {
                 <nav>
                     {menuOpen && (
                     <div className='popup-menu'>
-                        <a href="#skills" className='menu-item' onClick={toggleMenu}>
+                        <li className='menu-item' onClick={() => handleLinkClick('skills')}>
                         SKILLSET
-                        </a>
-                        <a href="#about" className='menu-item' onClick={toggleMenu}>
+                        </li>
+                        <li className='menu-item' onClick={() => handleLinkClick('about')}>
                         ABOUT ME
-                        </a>
-                        <a href="#portfolio" className='menu-item' onClick={toggleMenu}>
+                        </li>
+                        <li className='menu-item' onClick={() => handleLinkClick('portfolio')}>
                         PORTFOLIO
-                        </a>
-                        <a href="#contact" className='menu-item' onClick={toggleMenu}>
+                        </li>
+                        <li className='menu-item' onClick={() => handleLinkClick('contact')}>
                         CONTACT
-                        </a>
+                        </li>
                     </div>
                     )}
                 <li>

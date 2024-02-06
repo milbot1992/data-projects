@@ -1,4 +1,3 @@
-import formatDistanceToNow from "date-fns/formatDistanceToNow";
 import { Link  } from "react-router-dom";
 import React, { useEffect } from 'react';
 import '../../../Styling/ProjectPages.css'
@@ -8,10 +7,6 @@ import Spend from '../../assets/Spend.png'
 
 
 export default function ClusterAnalysisPage() {
-    let timeAgo = "";
-    if (Date.parse("2023-12-17T11:13:00.000Z")) {
-        timeAgo = formatDistanceToNow(new Date("2023-12-17T11:13:00.000Z"), { addSuffix: true });
-    }
 
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -23,7 +18,7 @@ export default function ClusterAnalysisPage() {
             &laquo;
         </Link>
         <div className="projects-info">
-            <p className="time-ago">⏲️ {timeAgo}</p>
+            <br></br><br></br>
         </div>
         <h2>Customer Segmentation using a Clustering Model</h2>
         <p className='project-description'>

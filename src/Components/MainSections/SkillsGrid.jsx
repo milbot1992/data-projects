@@ -23,7 +23,7 @@ export default function SkillsGrid() {
                                 </div>
                                 <div>
                                     <h4>Data Analysis</h4>
-                                    <p className='skills-text'>I specialise in extracting valuable insights from data, distilling them into clear and concise reports or tools. My expertise lies in presenting results, identifying trends, and offering well-defined recommendations.</p>
+                                    <p className='skills-text'>I have a wealth of experience in finding valuable insights from data and translating them into a clear and understable narrative. I am highly skilled at identifying trends and creating visuals to present the findings and data-driven recommendations.</p>
                                 </div>
                             </div>
                             <div className='skill-section'>
@@ -32,7 +32,7 @@ export default function SkillsGrid() {
                                 </div>
                                 <div>
                                     <h4>Data Science</h4>
-                                    <p className='skills-text'>Leveraging advanced analytical techniques to extract meaningful patterns and insights from complex datasets. I excel in implementing innovative solutions to address real-world challenges.</p>
+                                    <p className='skills-text'>I use advanced analytical techniques including machine learning algorithms to pull meaningful patterns and insights from complex datasets. I use innovative and creative solutions to address real-world challenges.</p>
                                 </div>
                             </div>
                             <div className='skill-section'>
@@ -40,8 +40,8 @@ export default function SkillsGrid() {
                                     <img className='skills-image' src={Dashboard} alt="Image depicting data analysis"></img>
                                 </div>
                                 <div>
-                                    <h4>Dashboards</h4>
-                                    <p className='skills-text'>Dashboards dynamically display key insights in an interactive format, allowing users to delve into the data themselves.</p>
+                                    <h4>Web Development</h4>
+                                    <p className='skills-text'>I use a range of front-end and back-end technologies including Javascript (React, React Native), Typescript, HTML, CSS, Firebase and Supabase to create engaging and interactive web and mobile applications.</p>
                                 </div>
                             </div>
                             <div className='skill-section'>
@@ -50,7 +50,7 @@ export default function SkillsGrid() {
                                 </div>
                                 <div>
                                     <h4>Data Visualisations</h4>
-                                    <p className='skills-text'>I am able to use a wide range of tools including Tableau, Javascript (d3.js, Chart.js, Leaflet.js), Python, and Adobe Illustrator to craft engaging and informative visual representations.</p>
+                                    <p className='skills-text'>I am able to use a wide range of tools including Tableau, Javascript (d3.js, Chart.js, Leaflet.js), Python, Power BI and Adobe Illustrator to craft engaging and informative visual representations, including dashboards.</p>
                                 </div>
                             </div>
                         </div>

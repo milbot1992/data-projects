@@ -1,5 +1,5 @@
 .contact-section{
-    background-color: #63699a;
+    background-color: rgb(186, 214, 241);
 }
 
 .email-grid{
@@ -9,22 +9,23 @@
 }
 
 .email-text1{
-    color: white;
+    color: #444a74;
     padding-top: 0px;
     margin-top: 0px;
     margin-bottom: 10px;
-    padding-left: 10px
+    padding-left: 10px;
+    padding-right: 5px
 }
 
 .email-text2{
-    color: white;
+    color: #444a74;
     padding-top: 0px;
     margin-top: 0px;
-    margin-bottom: 11px
+    margin-bottom: 11px;
 }
 
 .contact-header{
-    color: white;
+    color: #444a74;
     padding-left: 10px;
     padding-top: 10px;
     margin-bottom: 10px

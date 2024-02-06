@@ -1,13 +1,8 @@
-import formatDistanceToNow from "date-fns/formatDistanceToNow";
 import { Link  } from "react-router-dom";
 import '../../../Styling/ProjectPages.css'
 import React, { useEffect } from 'react';
 
 export default function FreeStrokePage () {
-    let timeAgo = "";
-    if (Date.parse("2023-11-13T11:13:00.000Z")) {
-        timeAgo = formatDistanceToNow(new Date("2023-11-13T11:13:00.000Z"), { addSuffix: true });
-    }
 
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -19,7 +14,7 @@ export default function FreeStrokePage () {
             &laquo;
         </Link>
         <div className="projects-info">
-            <p className="time-ago">⏲️ {timeAgo}</p>
+            <br></br><br></br>
         </div>
         <h2>Free Stroke: Outdoor Swimming React Native Mobile App</h2>
         <p className='project-description'>A React Native app created with 4 other team members. The aim of this app was to help users to find safe outdoor swimming spots. We leveraged MongoDB for robust backend support and Firebase for user authentication, featuring an intuitive interface for exploring locations and sharing reviews. Dive in for a seamless experience that combines functionality with simplicity.</p>

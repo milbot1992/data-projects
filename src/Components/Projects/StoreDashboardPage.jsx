@@ -1,14 +1,9 @@
-import formatDistanceToNow from "date-fns/formatDistanceToNow";
 import { Link  } from "react-router-dom";
 import '../../../Styling/ProjectPages.css'
 import DBImage from '../../assets/FullDB.png'
 import React, { useEffect } from 'react';
 
 export default function StoreDashboardPage() {
-    let timeAgo = "";
-    if (Date.parse("2023-12-11T11:13:00.000Z")) {
-        timeAgo = formatDistanceToNow(new Date("2023-12-11T11:13:00.000Z"), { addSuffix: true });
-    }
 
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -21,7 +16,7 @@ export default function StoreDashboardPage() {
                 &laquo;
             </Link>
             <div className="projects-info">
-                <p className="time-ago">⏲️ {timeAgo}</p>
+                <br></br><br></br>
             </div>
             <h2>Global Supermarket Metrics Dashboard</h2>
             <p className='project-description'>The dashboard below is an example focusing on sales and profit of a global supermarket, visualising essential metrics and providing users with the autonomy to explore and analyse data independently. This particular dashboard, powered by Tableau, is tailored to reveal insights through dynamic filters and interactive features like tooltips. It allows users to actively engage with the information, offering a personalised and intuitive experience.</p>

@@ -13,7 +13,7 @@
 }
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: 0.9fr 1fr; 
     gap: 30px;
     margin: 0 auto; 
 }

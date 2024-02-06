@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react';
 import { fetchMeteors } from '../../../api.js';
 import MeteorMap from './Components/MeteorMap';
 import Filters from './Components/Filters';
-import formatDistanceToNow from "date-fns/formatDistanceToNow";
 import { Link  } from "react-router-dom";
 import MeteorTimeline from './Components/MeteorTimeLine.jsx'
 import PaperClip from '../../assets/Paperclip.png'
@@ -17,11 +16,6 @@ export default function MeteorMapPage() {
     const [originalMeteorList, setOriginalMeteorList] = useState([]); 
 
     const meteorCount = meteorList.length
-
-    let timeAgo = "";
-    if (Date.parse("2023-10-19T11:13:00.000Z")) {
-        timeAgo = formatDistanceToNow(new Date("2023-10-19T11:13:00.000Z"), { addSuffix: true });
-    }
 
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -56,7 +50,7 @@ export default function MeteorMapPage() {
             &laquo;
         </Link>
         <div className="projects-info">
-            <p className="time-ago">⏲️ {timeAgo}</p>
+            <br></br><br></br>
         </div>
         <h2>Meteor Landings</h2>
         <br></br>

@@ -28,9 +28,9 @@ margin-left: 50px
 }
 
 .project-list {
-  display: grid;
+  display: none;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 5px;
   list-style: none;
   margin-left:-15px;
 }
@@ -60,6 +60,13 @@ margin-left: 50px
   object-fit: cover;
   margin-right: 10px;
   padding-right:-20px
+}
+
+.project-card-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .project-card-content h2 {
@@ -114,6 +121,12 @@ margin-left: 50px
 @media only screen and (max-width: 1200px) {
   .project-card img {
       width:200px
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .project-list {
+    display: grid;
   }
 }
 

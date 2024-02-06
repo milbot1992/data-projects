@@ -1,4 +1,3 @@
-import formatDistanceToNow from "date-fns/formatDistanceToNow";
 import { Link  } from "react-router-dom";
 import '../../../Styling/ProjectPages.css'
 import React, { useEffect } from 'react';
@@ -9,10 +8,6 @@ import Relationship2 from '../../assets/Relationship2.png'
 import LEboxplot from '../../assets/LE-boxplot.png'
 
 export default function PortfolioPage() {
-    let timeAgo = "";
-    if (Date.parse("2023-01-16T11:13:00.000Z")) {
-        timeAgo = formatDistanceToNow(new Date("2023-01-16T11:13:00.000Z"), { addSuffix: true });
-    }
 
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -24,7 +19,7 @@ export default function PortfolioPage() {
             &laquo;
         </Link>
         <div className="projects-info">
-            <p className="time-ago">⏲️ {timeAgo}</p>
+            <br></br><br></br>
         </div>
         <h2>Life Expectancy</h2>
         <p className='project-description'>The objective of this analysis was to obtain a better understanding of the trends and changes in life expectancy over time, as well as to explore the factors that may be associated with variations in life expectancy. By examining important correlations, we can gain a better understanding of the underlying factors that influence changes in life expectancy over time.</p>

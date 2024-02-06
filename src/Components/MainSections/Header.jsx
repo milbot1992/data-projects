@@ -27,7 +27,7 @@ export default function Header() {
             <h2 className='header-header2'>_____</h2>
 
             <p className='intro1'>I specialise in translating intricate datasets into valuable and easily understandable insights.</p>
-            <p className='intro2'>I employ advanced analysis and visualisation techniques to effectively communicate results. My toolkit includes a diverse range of technologies including Tableau, Power BI, Python, JavaScript (React, d3.js, Chart.js, Leaflet.js), HTML, CSS, Adobe Illustrator and After Effects.</p>
+            <p className='intro2'>I use advanced analysis and visualisation techniques to effectively communicate results. My toolkit includes a diverse range of technologies including Tableau, Power BI, Python, JavaScript (React.js, d3.js, Chart.js, Leaflet.js, Node.js, Express.js), HTML, CSS, Adobe Illustrator and After Effects.</p>
             <br></br>
         </div>
         </div>
