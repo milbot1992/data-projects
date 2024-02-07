@@ -171,6 +171,7 @@ p {
         height: 400px;
         margin-top:-20px
     }
+
 }
 
 @media only screen and (max-width: 1200px) {
@@ -182,6 +183,14 @@ p {
 @media only screen and (max-width: 1100px) {
     .bar-chart-container {
         width:700px
+    }
+
+    .segment-window{
+        height: 620px
+    }
+
+    .key-step{
+        height: 460px
     }
 }
 
@@ -202,6 +211,21 @@ p {
         height: 400px;
         overflow:hidden
     }
+
+    .histogram-image{
+        height: 250px;
+        width: 90%
+    }
+    
+    .normal-image{
+        height: 300px;
+        width: 95%
+    }
+    
+    .boxplot-image{
+        height: 180px;
+        width: 95%
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -210,11 +234,20 @@ p {
     }
 
     .cluster-grid {
-        grid-template-columns: repeat(1, 1fr); 
+        grid-template-columns: repeat(2, 1fr); 
     }
+
 
     .customer-seg-img {
         width: 70%
+    }
+
+    .segment-window{
+        height: 880px
+    }
+
+    .key-step{
+        height: 560px
     }
 
     .LE-img {
@@ -262,11 +295,30 @@ p {
     .bar-chart-container {
         width:400px
     }
+
+    .segment-window{
+        height: 910px
+    }
+
+    .key-step{
+        height: 560px
+    }
+    
 }
 
 @media only screen and (max-width: 600px) {
     .bar-chart-container {
         width: 300px;
         margin-left:-10px
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .segment-window{
+        height: 1040px
+    }
+
+    .key-step{
+        height: 650px
     }
 }
