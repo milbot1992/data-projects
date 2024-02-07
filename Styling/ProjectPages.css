@@ -56,9 +56,6 @@ p {
     margin-top:-100px
 }
 
-.customer-seg-img {
-    width: 33%
-}
 
 .cluster-text {
  font-size: 13px
@@ -77,6 +74,83 @@ p {
     padding: 15px;
     border-radius: 8px;
     background-color: #fff; 
+}
+
+.segment-window {
+    border: 1px solid #707272; 
+    height: 588px
+}
+
+.segment-banner {
+    background-color: #f0f8ff;
+}
+
+.key-step {
+    margin-left: 35px;
+    margin-right: 35px;
+    padding-top: 5px;
+    padding-left: 35px;
+    border: 1px solid #a9a9a9;
+    height: 430px
+}
+
+.option-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.option-buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #e5edf4;
+    border: 0px
+}
+
+.option-buttons button.selected {
+    background-color: #b0bcbd;
+}
+
+.key-step-header {
+    background-color: #e4e4e4;
+    margin-right: 35px;
+    padding: 5px
+}
+
+.key-step-desc {
+    margin-right: 30px
+}
+
+.histogram-image{
+    height: 300px;
+    width: 75%
+}
+
+.normal-image{
+    height: 300px;
+    width: 45%
+}
+
+.boxplot-image{
+    height: 240px;
+    width: 45%
+}
+
+.option-buttons-arrows {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    align-items: end;
+}
+
+.option-buttons-arrows button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: white;
 }
 
 .LE-img {

@@ -7,7 +7,7 @@ import FreeStroke from '../../assets/FreeStroke.png';
 import GovtSpend from '../../assets/govtspend.png';
 import LEGraph from '../../assets/legraph.png';
 import StoreDB from '../../assets/DB.png';
-import honeycomb from '../../assets/honeycomb4.jpeg'
+import honeycomb from '../../assets/honeycomb5.jpeg'
 
 export default function ProjectGrid() {
     const images = [honeycomb, CarbonEmissions, Cluster, StoreDB, honeycomb, honeycomb, GovtSpend, MeteorMap, FreeStroke, LEGraph, honeycomb];
