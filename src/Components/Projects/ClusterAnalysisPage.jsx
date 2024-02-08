@@ -73,7 +73,7 @@ export default function ClusterAnalysisPage() {
                     <>
                         <div className="cluster-grid">
                             <div class="cluster-info" id="cluster-0">
-                                <h3>Cluster 0:</h3>
+                                <h3 className='cluster-header'>Cluster 0:</h3>
                                 <p className='cluster-text'>Are not parents</p>
                                 <p className='cluster-text'>High income group</p>
                                 <p className='cluster-text'>Second highest spending group</p>
@@ -82,7 +82,7 @@ export default function ClusterAnalysisPage() {
                             </div>
 
                             <div class="cluster-info" id="cluster-1">
-                                <h3>Cluster 1:</h3>
+                                <h3 className='cluster-header'>Cluster 1:</h3>
                                 <p className='cluster-text'>Are parents</p>
                                 <p className='cluster-text'>Relatively younger</p>
                                 <p className='cluster-text'>Lowest spending group</p>
@@ -90,7 +90,7 @@ export default function ClusterAnalysisPage() {
                             </div>
 
                             <div class="cluster-info" id="cluster-2">
-                                <h3>Cluster 2:</h3>
+                                <h3 className='cluster-header'>Cluster 2:</h3>
                                 <p className='cluster-text'>Are parents</p>
                                 <p className='cluster-text'>Relatively higher age</p>
                                 <p className='cluster-text'>Mid income group</p>
@@ -100,7 +100,7 @@ export default function ClusterAnalysisPage() {
                             </div>
 
                             <div class="cluster-info" id="cluster-3">
-                                <h3>Cluster 3:</h3>
+                                <h3 className='cluster-header'>Cluster 3:</h3>
                                 <p className='cluster-text'>Are not parents</p>
                                 <p className='cluster-text'>Highest income</p>
                                 <p className='cluster-text'>Highest spending group</p>
@@ -108,7 +108,7 @@ export default function ClusterAnalysisPage() {
                             </div>
 
                             <div class="cluster-info" id="cluster-4">
-                                <h3>Cluster 4:</h3>
+                                <h3 className='cluster-header'>Cluster 4:</h3>
                                 <p className='cluster-text'>Are parents</p>
                                 <p className='cluster-text'>Lower end of spending</p>
                                 <p className='cluster-text'>Lower end of income</p>

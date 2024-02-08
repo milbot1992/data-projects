@@ -78,7 +78,7 @@ p {
 
 .segment-window {
     border: 1px solid #707272; 
-    height: 588px
+    height: 100%
 }
 
 .segment-banner {
@@ -125,7 +125,7 @@ p {
 
 .histogram-image{
     height: 300px;
-    width: 75%
+    width: 50%
 }
 
 .normal-image{
@@ -185,10 +185,6 @@ p {
         width:700px
     }
 
-    .segment-window{
-        height: 620px
-    }
-
     .key-step{
         height: 460px
     }
@@ -242,12 +238,9 @@ p {
         width: 70%
     }
 
-    .segment-window{
-        height: 880px
-    }
-
     .key-step{
-        height: 560px
+        height: 560px;
+        padding-left: 15px;
     }
 
     .LE-img {
@@ -255,7 +248,11 @@ p {
     }
 
     .cluster-text {
-        font-size: 14px
+        font-size: 11px
+    }
+
+    .cluster-header{
+        font-size: 13px
     }
 
     p {
@@ -278,6 +275,25 @@ p {
         width:100%
     }
 
+    .key-step-header{
+        font-size: 15px;
+        margin-right: 15px;
+    }
+
+    .key-step-desc{
+        font-size: 14px
+    }
+
+    .key-step {
+        margin-left: 15px;
+        margin-right: 15px;
+        height: 500px
+    }
+    
+    .key-step-desc {
+        margin-right: 15px
+    }
+
     h2 {
         font-size:23px
     }
@@ -295,14 +311,6 @@ p {
     .bar-chart-container {
         width:400px
     }
-
-    .segment-window{
-        height: 910px
-    }
-
-    .key-step{
-        height: 560px
-    }
     
 }
 
@@ -310,15 +318,5 @@ p {
     .bar-chart-container {
         width: 300px;
         margin-left:-10px
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    .segment-window{
-        height: 1040px
-    }
-
-    .key-step{
-        height: 650px
     }
 }
