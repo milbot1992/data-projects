@@ -1,0 +1,223 @@
+.projects-page {
+    width: 80%;
+    margin: 0 auto
+}
+
+.projects-container {
+    width: 80%
+}
+
+.banner-image{
+    width: 100%;
+    height: 80%
+}
+
+.jupyter-project {
+    border-color: #000;
+    border-width: 1px;
+    padding: 10px;
+    background-color:#fff
+}
+
+.button-jupyter{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #bababa; 
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+p {
+    font-size: 16px
+}
+
+
+.cluster-text {
+ font-size: 13px
+}
+
+.cluster-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    padding: 20px;
+    background-color: #f0f8ff; 
+}
+
+.cluster-info {
+    border: 1px solid #b0e0e6; 
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #fff; 
+}
+
+.segment-window {
+    border: 1px solid #bababa; 
+    border-radius: 10px;
+    height: 100%
+}
+
+.segment-banner {
+    background-color: #f0f8ff;
+    border-radius: 10px;
+}
+
+.key-step {
+    margin-left: 35px;
+    margin-right: 35px;
+    padding-top: 5px;
+    padding-left: 35px;
+    border: 1px solid #dadada;
+    border-radius: 10px;
+    height: 430px
+}
+
+.option-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.option-buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #e5edf4;
+    border: 0px
+}
+
+.option-buttons button.selected {
+    background-color: #b0bcbd;
+}
+
+.key-step-header {
+    background-color: #e4e4e4;
+    margin-right: 35px;
+    padding: 5px
+}
+
+.key-step-desc {
+    margin-right: 30px
+}
+
+.histogram-image{
+    height: 300px;
+    width: 50%
+}
+
+.PCA-image{
+    height: 300px;
+    width: 35%
+}
+
+.normal-image{
+    height: 300px;
+    width: 45%
+}
+
+.boxplot-image{
+    height: 240px;
+    width: 45%
+}
+
+.option-buttons-arrows {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    align-items: end;
+}
+
+.option-buttons-arrows button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: white;
+}
+
+
+@media only screen and (max-width: 1100px) {
+    .key-step{
+        height: 460px
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .histogram-image{
+        height: 250px;
+        width: 90%
+    }
+    
+    .PCA-image{
+        height: 300px;
+        width: 95%
+    }
+
+    .normal-image{
+        height: 250px;
+        width: 95%
+    }
+    
+    .boxplot-image{
+        height: 180px;
+        width: 95%
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .cluster-grid {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .customer-seg-img {
+        width: 70%
+    }
+
+    .key-step{
+        height: 560px;
+        padding-left: 15px;
+    }
+
+    .cluster-text {
+        font-size: 11px
+    }
+
+    .cluster-header{
+        font-size: 13px
+    }
+
+    p {
+        font-size:16px
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .key-step-header{
+        font-size: 15px;
+        margin-right: 15px;
+    }
+
+    .key-step-desc{
+        font-size: 14px
+    }
+
+    .key-step {
+        margin-left: 15px;
+        margin-right: 15px;
+        height: 500px
+    }
+    
+    .key-step-desc {
+        margin-right: 15px
+    }
+
+    h2 {
+        font-size:23px
+    }
+}

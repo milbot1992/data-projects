@@ -1,13 +1,26 @@
 import { Link  } from "react-router-dom";
 import '../../../Styling/ProjectPages.css'
-import DBImage from '../../assets/FullDB.png'
-import React, { useEffect } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 
 export default function StoreDashboardPage() {
+    const [showKeyInfo, setShowKeyInfo] = useState(false);
 
     useEffect(() => {
-        window.scrollTo(0, 0)
-      }, [])
+          window.scrollTo(0, 0)
+        }, [])
+  
+    const toggleKeyInfo = () => {
+        setShowKeyInfo(prevState => !prevState);
+          if (!showKeyInfo) {
+              const jupyterSection = document.getElementById("jupyter-section");
+                  window.scrollTo({
+                      top: jupyterSection.offsetTop,
+                      behavior: "smooth"
+                  });
+           }
+      };
+
+    const keyInfoRef = useRef(null);
 
     return (
         <div className='projects-page'>
@@ -21,7 +34,7 @@ export default function StoreDashboardPage() {
             <h2>Global Supermarket Metrics Dashboard</h2>
             <p className='project-description'>The dashboard below is an example focusing on sales and profit of a global supermarket, visualising essential metrics and providing users with the autonomy to explore and analyse data independently. This particular dashboard, powered by Tableau, is tailored to reveal insights through dynamic filters and interactive features like tooltips. It allows users to actively engage with the information, offering a personalised and intuitive experience.</p>
 
-            <p className='project-description'>Screenshot of the dashboard is below and click <a href="https://public.tableau.com/app/profile/millie.ellis6600/viz/GlobalSuperstorePerformanceMetrics/Dashboard1?publish=yes" target="_blank">here</a> to navigate to the interactive dashboard.</p>
+            <p className='project-description'>Best viewed on a laptop - click <a href="https://public.tableau.com/app/profile/millie.ellis6600/viz/GlobalSuperstorePerformanceMetrics/Dashboard1?publish=yes" target="_blank">here</a> to navigate to the interactive dashboard with optimised mobile view.</p>
         </div>
 
         <div className='dashboard-colour-banner'>
@@ -44,18 +57,24 @@ export default function StoreDashboardPage() {
         </div>
         <br></br><br></br>
         <div>
-            <img
-                className='tableau-DB'
-                src={DBImage}
-                alt={`a screenshot of an interactive dashboard showing global supermarket data`}
-            />
-            <h3>Key Information</h3>
-                <h4>Data Source</h4>
-                <p>The data utilised in this Tableau dashboard is sourced from the Global Superstore dataset, providing insights into sales, profit, and quantity metrics: <a href="https://www.kaggle.com/datasets/apoorvaappz/global-super-store-dataset" target="_blank">Global Superstore Dataset on Kaggle</a></p>
+        <iframe className='DB-jupyter' src="https://public.tableau.com/views/GlobalSuperstorePerformanceMetrics/Dashboard1?:embed=y&:display_count=yes:showVizHome=no" width="1200" height="777"frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            <div ref={keyInfoRef}>
+                      <button className='button-keyinfo' onClick={toggleKeyInfo}>
+                          {showKeyInfo ? 'Hide Key Information' : 'Click here to see Key Information'}
+                      </button>
+                      {showKeyInfo && (
+                        <>
+                            <h3>Key Information</h3>
+                            <h4>Data Source</h4>
+                            <p>The data utilised in this Tableau dashboard is sourced from the Global Superstore dataset, providing insights into sales, profit, and quantity metrics: <a href="https://www.kaggle.com/datasets/apoorvaappz/global-super-store-dataset" target="_blank">Global Superstore Dataset on Kaggle</a></p>
 
-                <h4>Methodology</h4>
-                <p>The dashboard is created using Tableau, a powerful data visualisation platform. Various interactive charts and graphs showcase key metrics, enabling users to explore global superstore sales, profit, and quantity trends visually.</p>
-                <br></br>
+                            <h4>Methodology</h4>
+                            <p>The dashboard is created using Tableau, a powerful data visualisation platform. Various interactive charts and graphs showcase key metrics, enabling users to explore global superstore sales, profit, and quantity trends visually.</p>
+                            <br></br>
+                        </>
+                        )}
+            </div>
+
         </div>
         </div>
     );

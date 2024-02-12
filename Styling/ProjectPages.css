@@ -7,8 +7,27 @@
     width: 80%
 }
 
+.banner-image{
+    width: 100%;
+    height: 80%
+}
+
 .tableau-DB {
     width: 100%;
+}
+
+.carbon-emissions-header{
+    color: rgb(10, 98, 106)
+}
+
+.button-keyinfo{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #bababa; 
+    margin-bottom: 40px;
+    margin-top: 40px;
+    cursor: pointer;
 }
 
 .dashboard-colour-banner {
@@ -33,6 +52,10 @@
     background-color:#fff
 }
 
+.DB-jupyter{
+    margin-left: -30px;
+}
+
 .d3-project {
     width: 700px;
     height: 700px;
@@ -54,103 +77,6 @@ p {
     padding: 20px;
     margin-left: -50px;
     margin-top:-100px
-}
-
-
-.cluster-text {
- font-size: 13px
-}
-
-.cluster-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 20px; 
-    padding: 20px;
-    background-color: #f0f8ff; 
-}
-
-.cluster-info {
-    border: 1px solid #b0e0e6; 
-    padding: 15px;
-    border-radius: 8px;
-    background-color: #fff; 
-}
-
-.segment-window {
-    border: 1px solid #707272; 
-    height: 100%
-}
-
-.segment-banner {
-    background-color: #f0f8ff;
-}
-
-.key-step {
-    margin-left: 35px;
-    margin-right: 35px;
-    padding-top: 5px;
-    padding-left: 35px;
-    border: 1px solid #a9a9a9;
-    height: 430px
-}
-
-.option-buttons {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.option-buttons button {
-    margin: 0 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #e5edf4;
-    border: 0px
-}
-
-.option-buttons button.selected {
-    background-color: #b0bcbd;
-}
-
-.key-step-header {
-    background-color: #e4e4e4;
-    margin-right: 35px;
-    padding: 5px
-}
-
-.key-step-desc {
-    margin-right: 30px
-}
-
-.histogram-image{
-    height: 300px;
-    width: 50%
-}
-
-.normal-image{
-    height: 300px;
-    width: 45%
-}
-
-.boxplot-image{
-    height: 240px;
-    width: 45%
-}
-
-.option-buttons-arrows {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-    align-items: end;
-}
-
-.option-buttons-arrows button {
-    margin: 0 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: white;
 }
 
 .LE-img {
@@ -184,10 +110,6 @@ p {
     .bar-chart-container {
         width:700px
     }
-
-    .key-step{
-        height: 460px
-    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -207,21 +129,6 @@ p {
         height: 400px;
         overflow:hidden
     }
-
-    .histogram-image{
-        height: 250px;
-        width: 90%
-    }
-    
-    .normal-image{
-        height: 300px;
-        width: 95%
-    }
-    
-    .boxplot-image{
-        height: 180px;
-        width: 95%
-    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -229,30 +136,8 @@ p {
         width:600px
     }
 
-    .cluster-grid {
-        grid-template-columns: repeat(2, 1fr); 
-    }
-
-
-    .customer-seg-img {
-        width: 70%
-    }
-
-    .key-step{
-        height: 560px;
-        padding-left: 15px;
-    }
-
     .LE-img {
         width: 70%
-    }
-
-    .cluster-text {
-        font-size: 11px
-    }
-
-    .cluster-header{
-        font-size: 13px
     }
 
     p {
@@ -273,25 +158,6 @@ p {
         height: 200px;
         margin-top: -15px;
         width:100%
-    }
-
-    .key-step-header{
-        font-size: 15px;
-        margin-right: 15px;
-    }
-
-    .key-step-desc{
-        font-size: 14px
-    }
-
-    .key-step {
-        margin-left: 15px;
-        margin-right: 15px;
-        height: 500px
-    }
-    
-    .key-step-desc {
-        margin-right: 15px
     }
 
     h2 {
