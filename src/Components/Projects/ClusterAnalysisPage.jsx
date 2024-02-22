@@ -24,6 +24,9 @@ export default function ClusterAnalysisPage() {
 
     const [view, setView] = useState('Methodology');
     const [showJupyterInfo, setShowJupyterInfo] = useState(false);
+    const [imageLoaded, setImageLoaded] = useState(false);
+    const [currentStep, setCurrentStep] = useState(0);
+    const [currentImage, setCurrentImage] = useState(keyStepImages[0])
 
     const toggleView = (option) => {
         setView(option);
@@ -40,8 +43,6 @@ export default function ClusterAnalysisPage() {
          }
     };
 
-    const [currentStep, setCurrentStep] = useState(0);
-
     const nextStep = () => {
         setCurrentStep(prevStep => prevStep < keyStepHeaders.length - 1 ? prevStep + 1 : prevStep);
     };
@@ -50,11 +51,17 @@ export default function ClusterAnalysisPage() {
         setCurrentStep(prevStep => prevStep > 0 ? prevStep - 1 : prevStep);
     };
 
+    const handleImageLoad = () => {
+        setImageLoaded(true);
+      };
+
     const preloadImages = () => {
         keyStepImages.forEach(image => {
-            new Image().src = image;
+          const img = new Image();
+          img.onload = handleImageLoad;
+          img.src = image;
         });
-    };
+      };
 
     const jupyterRef = useRef(null);
 
@@ -91,7 +98,7 @@ export default function ClusterAnalysisPage() {
                             <h3 className='key-step-header'>{keyStepHeaders[currentStep]}</h3>
                             {keyStepSubHead[currentStep] && <h4>{keyStepSubHead[currentStep]}</h4>}
                             <p className='key-step-desc'>{keyStepDesc[currentStep]}</p>
-                            {keyStepImages[currentStep] && <img src={keyStepImages[currentStep]} className={keyStepImageClass[currentStep]} alt={`Step ${currentStep + 1}`} />}
+                            {imageLoaded && keyStepImages[currentStep] && <img src={keyStepImages[currentStep]} className={keyStepImageClass[currentStep]} alt={`Step ${currentStep + 1}`} />}
                         </div>
                         <br/><br/>
                     </>
