@@ -1,4 +1,4 @@
-import Cluster from '../../assets/Cluster.png'
+import Cluster from '../../assets/cluster.png'
 
 export default function ClusterAnalysisCard () {
     

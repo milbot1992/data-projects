@@ -1,4 +1,4 @@
-import MeteorMap from '../../assets/Meteor.png'
+import MeteorMap from '../../assets/meteor.png'
 
 export default function MeteorMapCard () {
     

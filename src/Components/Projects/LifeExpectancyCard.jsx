@@ -1,4 +1,4 @@
-import LEGraph from '../../assets/LEgraph.png'
+import LEGraph from '../../assets/legraph.png'
 
 export default function LifeExpectancyCard () {
     

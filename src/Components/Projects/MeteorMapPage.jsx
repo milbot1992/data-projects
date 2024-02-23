@@ -5,8 +5,8 @@ import MeteorMap from './Components/MeteorMap';
 import Filters from './Components/Filters';
 import { Link  } from "react-router-dom";
 import MeteorTimeline from './Components/MeteorTimeLine.jsx'
-import PaperClip from '../../assets/Paperclip.png'
-import Crane from '../../assets/Crane.png'
+import PaperClip from '../../assets/paperclip.png'
+import Crane from '../../assets/crane.png'
 import Arrow from '../../assets/arrow2.png'
 
 export default function MeteorMapPage() {
