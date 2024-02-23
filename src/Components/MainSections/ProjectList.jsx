@@ -7,11 +7,16 @@ import StoreDashboardCard from "../Projects/StoreDashboardCard";
 import FreeStrokeCard from "../Projects/FreeStrokeCard";
 import CarbonEmissionsCard from "../Projects/CarbonEmissionsCard";
 import LifeExpectancyCard from '../Projects/LifeExpectancyCard'
+import GraceYogaCard from '../Projects/GraceYogaCard';
+import NewsSiteCard from '../Projects/NewsSiteCard';
 
 export default function ProjectList() {
 
     return (
         <ul className="project-list">
+                            <Link to={`https://grace-yoga.netlify.app/`} target={0 === 0 ? "_blank" : ""}>
+                                <GraceYogaCard />
+                            </Link>
                             <Link to={`/carbonemissions`}>
                                 <CarbonEmissionsCard />
                             </Link>
@@ -32,6 +37,9 @@ export default function ProjectList() {
                             </Link>
                             <Link to={`/lifeexpectancy`}>
                                 <LifeExpectancyCard />
+                            </Link>
+                            <Link to={`https://me-news.netlify.app/news`} target={8 === 8 ? "_blank" : ""}>
+                                <NewsSiteCard />
                             </Link>
                         </ul>
     )
