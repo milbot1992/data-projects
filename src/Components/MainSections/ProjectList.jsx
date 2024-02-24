@@ -14,7 +14,7 @@ export default function ProjectList() {
 
     return (
         <ul className="project-list">
-                            <Link to={`https://grace-yoga.netlify.app/`} target={0 === 0 ? "_blank" : ""}>
+                            <Link to={`https://graceyogamcr.com/`} target={0 === 0 ? "_blank" : ""}>
                                 <GraceYogaCard />
                             </Link>
                             <Link to={`/carbonemissions`}>

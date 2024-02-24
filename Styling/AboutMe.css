@@ -3,7 +3,7 @@
     grid-template-columns: 4.2fr 0.8fr; 
     gap: 30px; 
     margin: 0 auto; 
-    width: 80%;
+    width: 70%;
     margin-top: 50px;
     margin-bottom: 100px
 }
@@ -29,6 +29,7 @@
 @media only screen and (max-width: 768px) {
     .about-grid {
         grid-template-columns: 5fr 1fr; 
+        width: 80%
     }
     
     .about-image {
@@ -40,15 +41,9 @@
     .about-text {
         font-size: 14px
     }
-    
-    .about-text2 {
-        font-size: 14px;
-        display: none
-    }
 
-    .about-text3 {
-        font-size: 14px;
-        padding-bottom: 10px
+    .about-text2 {
+        display: none
     }
 
     .about-intro {

@@ -15,7 +15,7 @@ export default function ProjectGrid() {
     const images = [honeycomb, YogaSite, CarbonEmissions, Cluster, StoreDB, honeycomb, GovtSpend, MeteorMap, FreeStroke, LEGraph, NewsSite, honeycomb];
     const headers = ['', 'Web Development: Yoga Classes Site', 'Data Visualisation: Carbon Emissions', 'Machine Learning: Cluster Analysis', 'Dashboard: Superstore Metrics', '', 'Data Visualisation: Government Spending', 'Data Visualisation: Meteor Landings', 'App Development: Outdoor Swim Spots', 'Data Analysis: Life Expectancy', 'Web Development: News Site']
     const descriptions = ['', 'Website to display weekly yoga classes for a local yoga instructor', 'Carbon Emissions visualised by country each year since 1970', 'Customer Segmentation model to aid in ore targeted and effective strategies', 'Interactive dashboard created using Tableau to show key metrics', '', 'Interactive zoomable circle chart using d3.js', 'API meteor landings data to create a visual map', 'React Native mobile app created to help users find safe swim spots', 'Exploratory Data Analysis project investigating life expectancy', 'Website to display news articles by topic, with comments and likes']
-    const links = ['', 'https://grace-yoga.netlify.app/', '/carbonemissions', '/clusteranalysis', '/supermarketmetrics', '', '/governmentspend', '/meteormap', '/freestroke', '/lifeexpectancy', 'https://me-news.netlify.app/news']
+    const links = ['', 'https://graceyogamcr.com/', '/carbonemissions', '/clusteranalysis', '/supermarketmetrics', '', '/governmentspend', '/meteormap', '/freestroke', '/lifeexpectancy', 'https://me-news.netlify.app/news']
 
     return (
         <>

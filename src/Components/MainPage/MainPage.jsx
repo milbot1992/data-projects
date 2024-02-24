@@ -13,7 +13,7 @@ export default function MainPage() {
 
     const { scrollY } = useViewportScroll();
 
-    const opacity = useTransform(scrollY, [1400, 1800], [0, 1]);
+    const opacity = useTransform(scrollY, [1300, 1700], [0, 1]);
     
     return (
         <>

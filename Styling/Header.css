@@ -1,6 +1,6 @@
 .background-header {
     background-color: rgb(186, 214, 241);
-    height: 950px;
+    height: 760px;
 }
 
 .header-content {
@@ -102,6 +102,6 @@
     }
 
     .background-header {
-        height: 1050px
+        height: 850px
     }
 }

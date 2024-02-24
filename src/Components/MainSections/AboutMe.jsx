@@ -6,7 +6,7 @@ import { motion, useTransform, useViewportScroll } from "framer-motion";
 export default function AboutMe() {
     const { scrollY } = useViewportScroll();
 
-    const opacity = useTransform(scrollY, [1000, 1500], [0, 1]);
+    const opacity = useTransform(scrollY, [850, 1300], [0, 1]);
 
     return (
         <>
@@ -15,9 +15,10 @@ export default function AboutMe() {
                 <div className='about-grid'>
                     <div className='about-intro'>
                         <h4>ABOUT ME</h4>
-                        <p className='about-text'>Hi my name is Millie. I am an energetic and imaginative data expert. I hold a Master's degree in Global Health with Statistics, and have also completed a Software Engineering bootcamp where I advanced my skills in back-end and front-end Software and Data Engineering, including coding best practices. I also have a first class undergraduate degree in Chemistry, giving me a solid scientific foundation.</p>
-                        <p className='about-text2'>I have always enjoyed problem-solving and working with formulas, and I have a strong ability to simplify intricate data projects and create innovative solutions.</p>
-                        <p className='about-text2'>I have over 7 years experience in analytical roles, leading project teams, working extensively with big data, automating processes, creating algorithms, maintaining the data warehouse, constructing data models, and visualising data to provide key insights.</p>
+                        <p className='about-text'>Hi my name is Millie. I am an energetic and imaginative data expert. I love working at the intersection of data analytics and software engineering – creating data driven applications that serve a purpose or highlight a key insight.</p>
+                        <p className='about-text'>I have over 7 years experience working in analytical tech roles and spend a lot of time setting up my own projects also - especially in areas of interest or learning new skills.</p>
+                        <p className='about-text2'>Please browse through a range of my projects below.</p>
+
                         <br></br>
                     </div>
                     <div>
