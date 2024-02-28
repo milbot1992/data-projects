@@ -46,6 +46,23 @@ nav a:hover{
   display: none;
 }
 
+@media only screen and (max-width: 1100px) {
+  .nav-logo{
+    padding-left: 60px;
+    padding-right: 140px
+  }
+
+  .git-icon{
+    padding-right: 80px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  nav {
+    grid-template-columns: 0.2fr 0.6fr 0.6fr 0.6fr 1fr 0.1fr 0.2fr;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .nav-title {
     display: none

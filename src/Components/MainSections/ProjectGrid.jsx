@@ -12,10 +12,10 @@ import YogaSite from '../../assets/YogaSite.png'
 import NewsSite from '../../assets/news.png'
 
 export default function ProjectGrid() {
-    const images = [honeycomb, YogaSite, CarbonEmissions, Cluster, StoreDB, honeycomb, GovtSpend, MeteorMap, FreeStroke, LEGraph, NewsSite, honeycomb];
-    const headers = ['', 'Web Development: Yoga Classes Site', 'Data Visualisation: Carbon Emissions', 'Machine Learning: Cluster Analysis', 'Dashboard: Superstore Metrics', '', 'Data Visualisation: Government Spending', 'Data Visualisation: Meteor Landings', 'App Development: Outdoor Swim Spots', 'Data Analysis: Life Expectancy', 'Web Development: News Site']
-    const descriptions = ['', 'Website to display weekly yoga classes for a local yoga instructor', 'Carbon Emissions visualised by country each year since 1970', 'Customer Segmentation model to aid in ore targeted and effective strategies', 'Interactive dashboard created using Tableau to show key metrics', '', 'Interactive zoomable circle chart using d3.js', 'API meteor landings data to create a visual map', 'React Native mobile app created to help users find safe swim spots', 'Exploratory Data Analysis project investigating life expectancy', 'Website to display news articles by topic, with comments and likes']
-    const links = ['', 'https://graceyogamcr.com/', '/carbonemissions', '/clusteranalysis', '/supermarketmetrics', '', '/governmentspend', '/meteormap', '/freestroke', '/lifeexpectancy', 'https://me-news.netlify.app/news']
+    const images = [honeycomb, YogaSite, CarbonEmissions, Cluster, FreeStroke, honeycomb, GovtSpend, NewsSite, MeteorMap, LEGraph, StoreDB, honeycomb];
+    const headers = ['', 'Web Development: Yoga Classes Site', 'Data Visualisation: Carbon Emissions', 'Machine Learning: Cluster Analysis', 'App Development: Outdoor Swim Spots', '','Data Visualisation: Government Spending', 'Web Development: News Site', 'Data Visualisation: Meteor Landings', 'Data Analysis: Life Expectancy', 'Dashboard: Superstore Metrics']
+    const descriptions = ['', 'Website to display weekly yoga classes for a local yoga instructor', 'Carbon Emissions visualised by country each year since 1970', 'Customer Segmentation model to aid in ore targeted and effective strategies', 'React Native mobile app created to help users find safe swim spots', '', 'Interactive zoomable circle chart using d3.js', 'Website to display news articles by topic, with comments and likes', 'API meteor landings data to create a visual map', 'Exploratory Data Analysis project investigating life expectancy', 'Interactive dashboard created using Tableau to show key metrics']
+    const links = ['', 'https://graceyogamcr.com/', '/carbonemissions', '/clusteranalysis', '/freestroke', '', '/governmentspend', 'https://me-news.netlify.app/news', '/meteormap', '/lifeexpectancy', '/supermarketmetrics']
 
     return (
         <>

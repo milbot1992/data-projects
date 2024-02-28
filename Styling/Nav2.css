@@ -15,6 +15,12 @@
   display: none
 }
 
+@media only screen and (max-width: 950px) {
+  .nav2 {
+    grid-template-columns: 0.2fr 0.6fr 0.6fr 0.6fr 1fr 0.1fr 0.2fr;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .nav-title {
     display: none

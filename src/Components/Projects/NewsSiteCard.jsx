@@ -10,7 +10,7 @@ export default function NewsSiteCard () {
         />
         <div className="project-card-content">
         <h2>Web Development: News Site</h2>
-        <h4 className='project-card-desc'>Website to display news articles by topic, with comments and likes</h4>
+        <h4 className='project-card-desc'>RestFUL API and React frontend - website to display news articles by topic, with optimistic rendering.</h4>
         <br></br>
         </div>
     </section>

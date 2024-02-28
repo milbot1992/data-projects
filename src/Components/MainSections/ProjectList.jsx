@@ -23,23 +23,23 @@ export default function ProjectList() {
                             <Link to={`/clusteranalysis`}>
                                 <ClusterAnalysisCard />
                             </Link>
-                            <Link to={`/supermarketmetrics`}>
-                                <StoreDashboardCard />
+                            <Link to={`/freestroke`}>
+                                <FreeStrokeCard />
                             </Link>
                             <Link to={`/governmentspend`}>
                                 <GovtSpendCard />
                             </Link>
+                            <Link to={`https://me-news.netlify.app/news`} target={8 === 8 ? "_blank" : ""}>
+                                <NewsSiteCard />
+                            </Link>
                             <Link to={`/meteormap`}>
                                 <MeteorMapCard />
-                            </Link>
-                            <Link to={`/freestroke`}>
-                                <FreeStrokeCard />
                             </Link>
                             <Link to={`/lifeexpectancy`}>
                                 <LifeExpectancyCard />
                             </Link>
-                            <Link to={`https://me-news.netlify.app/news`} target={8 === 8 ? "_blank" : ""}>
-                                <NewsSiteCard />
+                            <Link to={`/supermarketmetrics`}>
+                                <StoreDashboardCard />
                             </Link>
                         </ul>
     )

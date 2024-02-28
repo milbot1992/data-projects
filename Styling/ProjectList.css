@@ -102,7 +102,7 @@ margin-left: 50px
   }
 
   .project-card-content h2 {
-      font-size:1.2rem
+      font-size:1.2rem;
   }
 
   .project-card-content h4 {
@@ -138,13 +138,13 @@ margin-left: 50px
 
 @media only screen and (max-width: 950px) {
   .project-list {
-      grid-template-columns:repeat(1, 1fr)
+      grid-template-columns:repeat(1, 1fr);
   }
 
   .project-card {
       height: 200px;
       width: 90%;
-      margin-left:5px
+      margin-left:5px;
   }
 
   .project-card img {
@@ -153,7 +153,7 @@ margin-left: 50px
   }
 
   .project-card-content h2 {
-      font-size:1.2rem
+      font-size:1.2rem;
   }
 
   .project-card-content h4 {
