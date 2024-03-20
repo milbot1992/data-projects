@@ -15,7 +15,7 @@ export default function AboutMe() {
                 <div className='about-grid'>
                     <div className='about-intro'>
                         <h4>ABOUT ME</h4>
-                        <p className='about-text'>Hi my name is Millie. I am an energetic and imaginative data expert. I love working at the intersection of data analytics and software engineering – creating data driven applications that serve a purpose or highlight a key insight.</p>
+                        <p className='about-text'>Hi my name is Millie. I am an energetic and imaginative data expert. I love working at the intersection of software engineering and data analytics – creating innovative and creative applications that utilise the power of data science.</p>
                         <p className='about-text'>I have over 7 years experience working in analytical tech roles and spend a lot of time setting up my own projects also - especially in areas of interest or learning new skills.</p>
                         <p className='about-text2'>Please browse through a range of my projects below.</p>
 

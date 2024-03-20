@@ -12,18 +12,18 @@ import YogaSite from '../../assets/YogaSite.png'
 import NewsSite from '../../assets/news.png'
 
 export default function ProjectGrid() {
-    const images = [honeycomb, YogaSite, CarbonEmissions, Cluster, FreeStroke, honeycomb, GovtSpend, NewsSite, MeteorMap, LEGraph, StoreDB, honeycomb];
-    const headers = ['', 'Web Development: Yoga Classes Site', 'Data Visualisation: Carbon Emissions', 'Machine Learning: Cluster Analysis', 'App Development: Outdoor Swim Spots', '','Data Visualisation: Government Spending', 'Web Development: News Site', 'Data Visualisation: Meteor Landings', 'Data Analysis: Life Expectancy', 'Dashboard: Superstore Metrics']
-    const descriptions = ['', 'Website to display weekly yoga classes for a local yoga instructor', 'Carbon Emissions visualised by country each year since 1970', 'Customer Segmentation model to aid in ore targeted and effective strategies', 'React Native mobile app created to help users find safe swim spots', '', 'Interactive zoomable circle chart using d3.js', 'RestFUL API and React frontend - website to display news articles by topic, with optimistic rendering', 'API meteor landings data to create a visual map', 'Exploratory Data Analysis project investigating life expectancy', 'Interactive dashboard created using Tableau to show key metrics']
-    const links = ['', 'https://graceyogamcr.com/', '/carbonemissions', '/clusteranalysis', '/freestroke', '', '/governmentspend', 'https://me-news.netlify.app/news', '/meteormap', '/lifeexpectancy', '/supermarketmetrics']
-
+  const images = [honeycomb, YogaSite, CarbonEmissions, FreeStroke, NewsSite, honeycomb, Cluster, GovtSpend, MeteorMap, LEGraph, StoreDB, honeycomb];
+  const headers = ['', 'Web Development: Yoga Classes Site', 'Data Visualisation: Carbon Emissions', 'App Development: Outdoor Swim Spots', 'Web Development: News Site', '','Machine Learning: Cluster Analysis', 'Data Visualisation: Government Spending', 'Data Visualisation: Meteor Landings', 'Data Analysis: Life Expectancy', 'Dashboard: Superstore Metrics']
+  const descriptions = ['', 'Website to display weekly yoga classes for a local yoga instructor', 'Carbon Emissions visualised by country each year since 1970', 'React Native mobile app created to help users find safe swim spots', 'RestFUL API and React frontend - website to display news articles by topic, with optimistic rendering', '', 'Customer Segmentation model to aid in ore targeted and effective strategies', 'Interactive zoomable circle chart using d3.js', 'API meteor landings data to create a visual map', 'Exploratory Data Analysis project investigating life expectancy', 'Interactive dashboard created using Tableau to show key metrics']
+  const links = ['', 'https://graceyogamcr.com/', '/carbonemissions', '/freestroke', 'https://me-news.netlify.app/news', '', '/clusteranalysis', '/governmentspend', '/meteormap', '/lifeexpectancy', '/supermarketmetrics']
+  
     return (
         <>
           <div className="project-grid">
             {images.slice(0, 6).map((image, index) => (
               <div key={index} className="honeycomb">
                 {links[index] ? (
-                  <a href={links[index]} className="project-link" target={index === 1 ? "_blank" : ""}>
+                  <a href={links[index]} className="project-link" target={index === 1 || index === 4? "_blank" : ""}>
                     <img src={image} alt={`Image ${index}`} />
                     <div className="project-card-overlay">
                       <h2 className='project-header'>{headers[index]}</h2>
@@ -47,7 +47,7 @@ export default function ProjectGrid() {
             {images.slice(5).map((image, index) => (
               <div key={index + 5} className="honeycomb">
                 {links[index + 5] ? (
-                  <a href={links[index + 5]} className="project-link" target={index === 5 ? "_blank" : ""}>
+                  <a href={links[index + 5]} className="project-link" target={index + 5 === 1 || index + 5 === 7 ? "" : ""}>
                     <img src={image} alt={`Image ${index + 5}`} />
                     <div className="project-card-overlay">
                       <h2 className='project-header'>{headers[index + 5]}</h2>

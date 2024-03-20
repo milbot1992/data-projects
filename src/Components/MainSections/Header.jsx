@@ -21,9 +21,8 @@ export default function Header() {
         </div>
         <div className='header-content'>
             <h1 className='header-header'>Millie Ellis</h1>
-            <h2 className='header-header2'>Data Analysis</h2>
-            <h2 className='header-header2'>Data Science</h2>
             <h2 className='header-header2'>Development</h2>
+            <h2 className='header-header2'>Data Specialist</h2>
             <h2 className='header-header2'>_____</h2>
             <br></br>
         </div>
