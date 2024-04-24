@@ -8,18 +8,18 @@
   }
   
   .film-card {
-    width: 200px;
+    width: 160px;
     flex-shrink: 0;
   }
   
   .film-card img {
     height: 150px;
-    width: 85%;
+    width: 95%;
   }
   
   .film-scroll-container {
     display: flex;
-    overflow-x: hidden;
+    overflow-x: auto;
     scroll-behavior: smooth;
   }
   
