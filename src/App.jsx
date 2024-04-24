@@ -9,6 +9,7 @@ import GovtSpendPage from "./Components/Projects/GovtSpentPage.jsx";
 import StoreDashboardPage from "./Components/Projects/StoreDashboardPage.jsx";
 import FreeStrokePage from "./Components/Projects/FreeStrokePage.jsx";
 import CarbonEmissionsPage from "./Components/Projects/CarbonEmissionsPage.jsx";
+import FilmRecoSysApp from "./Components/FilmApp/FilmRecoSysApp.jsx";
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
           <Route path="/freestroke" element={<FreeStrokePage/>} />
           <Route path="/carbonemissions" element={<CarbonEmissionsPage/>} />
           <Route path="/meteormap" element={<MeteorMapPage/>} />
+          <Route path="/filmapp" element={<FilmRecoSysApp/>} />
         </Routes>
       </div>
     </>

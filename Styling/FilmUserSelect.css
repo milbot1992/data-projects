@@ -1,0 +1,10 @@
+.user-select-section{
+    background-color: rgb(255, 241, 250);
+    padding: 20px;
+    margin-bottom: 30px
+}
+
+.user-select-section label {
+    color: black;
+    margin-right: 10px
+}

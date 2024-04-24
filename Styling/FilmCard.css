@@ -1,0 +1,57 @@
+.film-card {
+    position: relative;
+    width: 250px;
+  }
+  
+  .film-image {
+    width: 80%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  .film-info-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  .film-info {
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 10px
+  }
+  
+  .film-card:hover .film-info-overlay {
+    opacity: 1;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .film-card {
+      width: 100px;
+    }
+    .film-image {
+      height: 130px;
+      width: 90%;
+    }
+    .film-info {
+      font-size: 12px
+    }
+
+    .film-info-overlay {
+      width: 90%;
+      height: 130px;
+    }
+  }

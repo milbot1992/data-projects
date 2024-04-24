@@ -1,0 +1,90 @@
+.film-list {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(255, 241, 250);
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 45px
+  }
+  
+  .film-card {
+    width: 200px;
+    flex-shrink: 0;
+  }
+  
+  .film-card img {
+    height: 150px;
+    width: 85%;
+  }
+  
+  .film-scroll-container {
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  
+  .scroll-button {
+    position: absolute;
+    top:350px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: rgb(159, 159, 159)
+  }
+  
+  .left {
+    left: 0;
+    margin-left: 30px;
+    background-color: rgb(255, 241, 250);
+    z-index: 1000;
+  }
+  
+  .right {
+    right: 0;
+    margin-right: 35px
+  }
+  
+  button:hover{
+    color: rgb(0, 0, 0);
+  }
+  
+@media only screen and (max-width: 768px) {
+  .scroll-button {
+    top:315px;
+  }
+
+  .film-card {
+    width: 100px;
+    height: 140px;
+    flex-shrink: 0;
+  }
+  
+  .film-card img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+  }
+
+  .film-scroll-container {
+    display: flex;
+    overflow-x: auto;
+    flex-direction: row; 
+    scroll-behavior: smooth;
+  }
+
+  .scroll-button {
+    display:none
+  }
+
+  .film-list {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(255, 241, 250);
+    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px
+  }
+
+}
