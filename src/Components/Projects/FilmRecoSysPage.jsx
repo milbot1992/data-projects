@@ -34,10 +34,10 @@ export default function FilmRecoSysPage () {
               <br></br><br></br>
           </div>
           <h2 className='film-header'>Film Recommendation System</h2>
-          <p className='project-description'>This film app offers personalised film recommendations based on user preferences. The app uses a Python-based recommendation system in the back-end and a React front-end, delivering film recommendations though an intuitive user interface.</p>
+          <p className='project-description'>This film app offers personalised film recommendations based on user preferences. The app uses a Python-based Machine Learning recommendation system in the back-end and a React front-end, delivering film recommendations though an intuitive user interface.</p>
           <h4>Recommendation System</h4>
           <p className='project-description'>
-            The backbone of the recommendation system is a Collaborative Filtering algorithm, which matches individuals with similar interests to provide personalised film suggestions. Powered by a cosine similarity matrix, this algorithm intelligently identifies user patterns and similarities, ensuring tailored recommendations. 
+            The backbone of the recommendation system is a Collaborative Filtering ML algorithm, which matches individuals with similar interests to provide personalised film suggestions. Powered by a cosine similarity matrix, this algorithm intelligently identifies user patterns and similarities, ensuring tailored recommendations. 
           </p>
           <h4>Integration</h4>
           <p className='project-description'>The back-end functions as an API which integrates seamlessly with the React front-end.</p>
