@@ -4,25 +4,30 @@
 
 body {
   margin: 0;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; 
 }
 
 .container {
+  padding-top: 40px;
   display: grid;
   grid-template-columns: 0.85fr auto;
   grid-template-rows: 1fr auto;
   grid-template-areas: 
     "image sidebar"
     "slider sidebar";
-  height: 100vh;
+  height: 90vh;
   width: 100vw;
   background-color: #ffffff;
+  margin: auto;
 }
 
 .main-image {
   grid-area: image;
   background-image: url("https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   width: 90%;
-  height: 90%;
+  height: 100%;
   background-position: top center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -53,10 +58,10 @@ body {
 .sidebar-box {
   background-color: #83b7d2; 
   padding: 20px;
-  margin-right: 40px;
+  margin-right: 50px;
   border-radius: 15px;
-  height: 90%;
   overflow-y: auto;
+  height: 100%
 }
 
 .sidebar-box::-webkit-scrollbar {
@@ -103,21 +108,21 @@ body {
 
 @media (max-width: 800px) {
   .container {
-    grid-template-rows: auto; 
-    grid-template-areas: 
-      "image"
-      "slider"
-      "sidebar";
+    display: flex; /* Change to flex layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    width: 90vw;
   }
 
   .sidebar {
     order: 3; /* Reorder sidebar to appear below image and slider */
-    padding-top: 20px; 
   }
 
   .main-image {
-    width: 95vw;
-    height: 50vh;
+    width: 100%;
+    height: 35vh;
+    margin-bottom: 0px;
+    padding-bottom: 0px
   }
 
   .settings-header {
@@ -137,6 +142,8 @@ body {
     margin: auto; 
     margin-top: 20px; 
     margin-bottom: 20px; 
+    height: 35vh;
+    margin-right: 0px
   }
 }
 
