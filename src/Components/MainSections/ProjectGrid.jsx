@@ -10,12 +10,13 @@ import StoreDB from '../../assets/DB.png';
 import honeycomb from '../../assets/honeycomb5.jpeg'
 import YogaSite from '../../assets/YogaSite.png'
 import NewsSite from '../../assets/news.png'
+import FilmSysCard from '../../assets/FilmSysCard.png'
 
 export default function ProjectGrid() {
-  const images = [honeycomb, YogaSite, CarbonEmissions, FreeStroke, NewsSite, honeycomb, Cluster, GovtSpend, MeteorMap, LEGraph, StoreDB, honeycomb];
-  const headers = ['', 'Web Development: Yoga Classes Site', 'Data Visualisation: Carbon Emissions', 'App Development: Outdoor Swim Spots', 'Web Development: News Site', '','Machine Learning: Cluster Analysis', 'Data Visualisation: Government Spending', 'Data Visualisation: Meteor Landings', 'Data Analysis: Life Expectancy', 'Dashboard: Superstore Metrics']
-  const descriptions = ['', 'Website to display weekly yoga classes for a local yoga instructor', 'Carbon Emissions visualised by country each year since 1970', 'React Native mobile app created to help users find safe swim spots', 'RestFUL API and React frontend - website to display news articles by topic, with optimistic rendering', '', 'Customer Segmentation model to aid in ore targeted and effective strategies', 'Interactive zoomable circle chart using d3.js', 'API meteor landings data to create a visual map', 'Exploratory Data Analysis project investigating life expectancy', 'Interactive dashboard created using Tableau to show key metrics']
-  const links = ['', 'https://graceyogamcr.com/', '/carbonemissions', '/freestroke', 'https://me-news.netlify.app/news', '', '/clusteranalysis', '/governmentspend', '/meteormap', '/lifeexpectancy', '/supermarketmetrics']
+  const images = [FilmSysCard, YogaSite, CarbonEmissions, FreeStroke, NewsSite, honeycomb, Cluster, GovtSpend, MeteorMap, LEGraph, StoreDB, honeycomb];
+  const headers = ['Full-Stack: Film Recommendation System App', 'Web Development: Yoga Classes Site', 'Data Visualisation: Carbon Emissions', 'App Development: Outdoor Swim Spots', 'Web Development: News Site', '','Machine Learning: Cluster Analysis', 'Data Visualisation: Government Spending', 'Data Visualisation: Meteor Landings', 'Data Analysis: Life Expectancy', 'Dashboard: Superstore Metrics']
+  const descriptions = ['Provides personalised film recommendations. Python with ML used in the back-end', 'Website to display weekly yoga classes for a local yoga instructor', 'Carbon Emissions visualised by country each year since 1970', 'React Native mobile app created to help users find safe swim spots', 'RestFUL API and React frontend - website to display news articles by topic, with optimistic rendering', '', 'Customer Segmentation model to aid in ore targeted and effective strategies', 'Interactive zoomable circle chart using d3.js', 'API meteor landings data to create a visual map', 'Exploratory Data Analysis project investigating life expectancy', 'Interactive dashboard created using Tableau to show key metrics']
+  const links = ['/recosys', 'https://graceyogamcr.com/', '/carbonemissions', '/freestroke', 'https://me-news.netlify.app/news', '', '/clusteranalysis', '/governmentspend', '/meteormap', '/lifeexpectancy', '/supermarketmetrics']
   
     return (
         <>

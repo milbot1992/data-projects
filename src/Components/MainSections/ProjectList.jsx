@@ -9,11 +9,15 @@ import CarbonEmissionsCard from "../Projects/CarbonEmissionsCard";
 import LifeExpectancyCard from '../Projects/LifeExpectancyCard'
 import GraceYogaCard from '../Projects/GraceYogaCard';
 import NewsSiteCard from '../Projects/NewsSiteCard';
+import FilmRecoSysCard from '../Projects/FilmRecoSysCard';
 
 export default function ProjectList() {
 
     return (
         <ul className="project-list">
+                            <Link to={`/recosys`}>
+                                <FilmRecoSysCard />
+                            </Link>
                             <Link to={`https://graceyogamcr.com/`} target={0 === 0 ? "_blank" : ""}>
                                 <GraceYogaCard />
                             </Link>
