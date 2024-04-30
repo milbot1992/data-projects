@@ -108,19 +108,19 @@ body {
 
 @media (max-width: 800px) {
   .container {
-    display: flex; /* Change to flex layout */
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
     width: 90vw;
   }
 
   .sidebar {
-    order: 3; /* Reorder sidebar to appear below image and slider */
+    order: 3; 
   }
 
   .main-image {
     width: 100%;
-    height: 35vh;
+    height: 31vh;
     margin-bottom: 0px;
     padding-bottom: 0px
   }
@@ -144,6 +144,11 @@ body {
     margin-bottom: 20px; 
     height: 35vh;
     margin-right: 0px
+  }
+
+  .slider {
+    width: 80%;
+    cursor: pointer;
   }
 }
 
