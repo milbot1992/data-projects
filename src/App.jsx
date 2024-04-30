@@ -11,6 +11,7 @@ import FreeStrokePage from "./Components/Projects/FreeStrokePage.jsx";
 import CarbonEmissionsPage from "./Components/Projects/CarbonEmissionsPage.jsx";
 import FilmRecoSysApp from "./Components/FilmApp/FilmRecoSysApp.jsx";
 import FilmRecoSysPage from "./Components/Projects/FilmRecoSysPage.jsx";
+import ImageEditorPage from "./Components/Projects/ImageEditorPage.jsx";
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
           <Route path="/meteormap" element={<MeteorMapPage/>} />
           <Route path="/filmapp" element={<FilmRecoSysApp/>} />
           <Route path="/recosys" element={<FilmRecoSysPage/>} />
+          <Route path="/image-editor" element={<ImageEditorPage/>} />
         </Routes>
       </div>
     </>

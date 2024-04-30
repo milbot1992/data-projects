@@ -1,0 +1,142 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 0.85fr auto;
+  grid-template-rows: 1fr auto;
+  grid-template-areas: 
+    "image sidebar"
+    "slider sidebar";
+  height: 100vh;
+  width: 100vw;
+  background-color: #ffffff;
+}
+
+.main-image {
+  grid-area: image;
+  background-image: url("https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  width: 90%;
+  height: 90%;
+  background-position: top center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: auto; 
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  align-self: center;
+  margin-top: 0px
+}
+
+.settings-header {
+  color: white;
+  font-weight: normal;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-family: Tahoma, sans-serif;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #ffffff; 
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.sidebar-box {
+  background-color: #83b7d2; 
+  padding: 20px;
+  margin-right: 40px;
+  border-radius: 15px;
+  height: 90%;
+  overflow-y: auto;
+}
+
+.sidebar-box::-webkit-scrollbar {
+  width: 11px;
+}
+
+.sidebar-box::-webkit-scrollbar-track {
+  background: none; 
+  margin: 10px;
+}
+
+.sidebar-box::-webkit-scrollbar-thumb {
+  border: 1px solid rgb(255, 255, 255); 
+  border-width: 2px;
+  border-radius: 15px; 
+  background-color: #6da6c4; 
+  padding: 5px;
+}
+
+.sidebar-item {
+  color: rgb(255, 255, 255); 
+  padding: 0rem;
+  font-size: 12pt;
+  background-color: #83b7d2; 
+  border: none;
+  font-family: Tahoma, sans-serif;
+}
+
+.sidebar-item:hover {
+  color: white;
+}
+
+.slider-container {
+  grid-area: slider;
+  margin-top: 10px;
+  margin-bottom: 1rem;
+  padding: 0rem;
+}
+
+.slider {
+  width: 90%;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .container {
+    grid-template-rows: auto; 
+    grid-template-areas: 
+      "image"
+      "slider"
+      "sidebar";
+  }
+
+  .sidebar {
+    order: 3; /* Reorder sidebar to appear below image and slider */
+    padding-top: 20px; 
+  }
+
+  .main-image {
+    width: 95vw;
+    height: 50vh;
+  }
+
+  .settings-header {
+    font-size: 15px;
+  }
+
+  .sidebar-item {
+    font-size: 10pt;
+  }
+
+  .slider-container {
+    margin-bottom: 0.5rem;
+  }
+
+  .sidebar-box {
+    width: 90vw; 
+    margin: auto; 
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+  }
+}
+
