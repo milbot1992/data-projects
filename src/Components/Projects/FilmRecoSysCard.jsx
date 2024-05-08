@@ -10,7 +10,7 @@ export default function FilmRecoSysCard () {
         />
         <div className="project-card-content">
         <h2>Full-Stack Development: Film Recommendation System</h2>
-        <h4 className='project-card-desc'>Film recommendation system using Python (powered by a machine learning algorithm) in the back-end and React in the front-end to provide personalised film recommendations</h4>
+        <h4 className='project-card-desc'>Provides personalised film recommendations. Uses Python (powered by a ML algorithm) in the back-end and React in the front-end.</h4>
         <br></br>
         </div>
     </section>

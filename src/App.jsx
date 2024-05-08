@@ -6,12 +6,12 @@ import LifeExpectancyPage from './Components/Projects/LifeExpectancyPage.jsx'
 import ClusterAnalysisPage from "./Components/Projects/ClusterAnalysisPage.jsx";
 import MeteorMapPage from "./Components/Projects/MeteorMapPage.jsx";
 import GovtSpendPage from "./Components/Projects/GovtSpentPage.jsx";
-import StoreDashboardPage from "./Components/Projects/StoreDashboardPage.jsx";
 import FreeStrokePage from "./Components/Projects/FreeStrokePage.jsx";
 import CarbonEmissionsPage from "./Components/Projects/CarbonEmissionsPage.jsx";
 import FilmRecoSysApp from "./Components/FilmApp/FilmRecoSysApp.jsx";
 import FilmRecoSysPage from "./Components/Projects/FilmRecoSysPage.jsx";
 import ImageEditorPage from "./Components/Projects/ImageEditorPage.jsx";
+import ChatBotPage from "./Components/Projects/ChatBotPage.jsx";
 
 function App() {
 
@@ -22,7 +22,6 @@ function App() {
           <Route path="/" element={<MainPage/>} />
           <Route path="/portfolio" element={<PortfolioPage/>} />
           <Route path="/governmentspend" element={<GovtSpendPage/>} />
-          <Route path="/supermarketmetrics" element={<StoreDashboardPage/>} />
           <Route path="/clusteranalysis" element={<ClusterAnalysisPage/>} />
           <Route path="/lifeexpectancy" element={<LifeExpectancyPage/>} />
           <Route path="/freestroke" element={<FreeStrokePage/>} />
@@ -31,6 +30,7 @@ function App() {
           <Route path="/filmapp" element={<FilmRecoSysApp/>} />
           <Route path="/recosys" element={<FilmRecoSysPage/>} />
           <Route path="/image-editor" element={<ImageEditorPage/>} />
+          <Route path="/chatbot" element={<ChatBotPage/>} />
         </Routes>
       </div>
     </>

@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 import ClusterAnalysisCard from "../Projects/ClusterAnalysisCard";
 import MeteorMapCard from "../Projects/MeteorMapCard";
 import GovtSpendCard from "../Projects/GovtSpendCard";
-import StoreDashboardCard from "../Projects/StoreDashboardCard";
 import FreeStrokeCard from "../Projects/FreeStrokeCard";
 import CarbonEmissionsCard from "../Projects/CarbonEmissionsCard";
 import LifeExpectancyCard from '../Projects/LifeExpectancyCard'
 import GraceYogaCard from '../Projects/GraceYogaCard';
 import NewsSiteCard from '../Projects/NewsSiteCard';
 import FilmRecoSysCard from '../Projects/FilmRecoSysCard';
+import ChatBotCard from '../Projects/ChatBotCard';
 
 export default function ProjectList() {
 
@@ -17,6 +17,9 @@ export default function ProjectList() {
         <ul className="project-list">
                             <Link to={`/recosys`}>
                                 <FilmRecoSysCard />
+                            </Link>
+                            <Link to={`/chatbot`}>
+                                <ChatBotCard />
                             </Link>
                             <Link to={`https://graceyogamcr.com/`} target={0 === 0 ? "_blank" : ""}>
                                 <GraceYogaCard />
@@ -41,9 +44,6 @@ export default function ProjectList() {
                             </Link>
                             <Link to={`/lifeexpectancy`}>
                                 <LifeExpectancyCard />
-                            </Link>
-                            <Link to={`/supermarketmetrics`}>
-                                <StoreDashboardCard />
                             </Link>
                         </ul>
     )

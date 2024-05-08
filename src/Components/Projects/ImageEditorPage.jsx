@@ -99,7 +99,7 @@ export default function ImageEditorPage() {
     }, [options]);
   
     return (
-      <div className='container'>
+      <div className='image-editor-container'>
         <div className="main-image" style={getImageStyle}></div>
         <div className='sidebar'>
             <div className='sidebar-box'>

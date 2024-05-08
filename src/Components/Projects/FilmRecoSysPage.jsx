@@ -74,7 +74,7 @@ export default function FilmRecoSysPage () {
                         </ul>
                         <h4>Front-end</h4>
                         <ul>
-                            <li>React Repo: <a href="https://github.com/milbot1992/data-projects">https://github.com/milbot1992/data-projects</a></li>
+                            <li>React front-end Repo: <a href="https://github.com/milbot1992/data-projects">https://github.com/milbot1992/data-projects</a></li>
                         </ul>
                         <h4>Data Sources</h4>
                         <ul>
