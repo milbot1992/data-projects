@@ -103,3 +103,19 @@
     background-color: #d0e0ff;
     font-size: 15px
 }
+
+@media only screen and (max-width: 900px) {
+    .chat-interface {
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+        left: 20px;
+        width: 400px;
+        height: 90vh;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        display: flex;
+        flex-direction: column;
+    }
+}
