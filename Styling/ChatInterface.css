@@ -108,9 +108,9 @@
     .chat-interface {
         position: fixed;
         bottom: 0px;
-        right: 0px;
+        right: 5px;
         left: 20px;
-        width: 400px;
+        width: 93vw;
         height: 90vh;
         border: 1px solid #ccc;
         background-color: #fff;

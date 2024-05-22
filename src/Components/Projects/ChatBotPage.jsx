@@ -39,15 +39,36 @@ export default function ChatBotPage () {
           <p className='project-description'>This fitness chatbot provides personalised advice on fitness and wellness. The backend uses a Flask Python application that interfaces with the OpenAI API to deliver fitness recommendations.</p>
           <h4>Chatbot Functionality</h4>
           <p className='project-description'>
-            Our chatbot uses the OpenAI API for natural language processing, enabling it to understand and respond to user inquiries effectively. 
+            The chatbot uses the OpenAI API for natural language processing, enabling it to understand and respond to user inquiries effectively. 
           </p>
-          <h4>Improving Chatbot responses through Contextual Data Integration</h4>
+          <h4>Training the Chatbot for more relevant and personalised responses</h4>
           <p className='project-description'>
-          In the backend, a sophisticated data management system has been implemented to enrich the chatbot's capabilities. This system strategically compiles and organises a comprehensive dataset that serves as a knowledge base for the chatbot. The dataset includes a wide array of fitness and wellness information, ensuring that the chatbot is equipped with the necessary context to provide relevant and accurate responses.
+            The chatbot has been trained to deliver relevant and personalised responses within the domain of fitness.
           </p>
+          <p className='project-description'>
+            Key features of the chatbot training include:
+          </p>
+
+          <ul className='project-description'>
+            <li>
+              <strong>Fitness-Focused Context:</strong>The chatbot is trained with a broad scope fitness-related information, enabling it to provide comprehensive answers.
+            </li>
+            <li>
+              <strong>Contextual Relevance:</strong> In the backend, a data management system has been implemented to allow the chatbot to analyse the context of the conversation to maintain relevance in its responses. It uses a sophisticated algorithm to understand and retain the flow of conversation, ensuring that each response builds upon the previous ones.
+            </li>
+            <li>
+              <strong>Non-Fitness Query Handling:</strong> If a user asks a non-fitness related question, the chatbot politely redirects the conversation by responding with, "Sorry, I am a fitness chatbot - please ask me a fitness related question." This ensures that the chatbot remains focused and provides value within its expertise.
+            </li>
+            <li>
+              <strong>Follow-Up Information:</strong> For users seeking additional details, the chatbot is capable of expanding on previous responses. If a user requests more information, the chatbot offers further insights and elaboration related to the initial query, enhancing the user's understanding and engagement.
+            </li>
+            <li>
+              <strong>Satisfaction and Further Inquiry:</strong> When a user employs a 'closing term' indicating satisfaction with the chatbot's response, the chatbot proactively asks, "Do you have any further questions?" This feature ensures that the user feels supported and has the opportunity to seek additional information or clarification.
+            </li>
+          </ul>
+
           <h4>Integration</h4>
           <p className='project-description'>The Flask-based backend functions seamlessly with the React front-end, providing a smooth and responsive user experience.</p>
-          <br></br>
           <p className='project-description'>
             You can interact with the fitness chatbot by clicking the 'Chat with Us Now' button in the bottom right-hand corner of this page. 
           </p>
