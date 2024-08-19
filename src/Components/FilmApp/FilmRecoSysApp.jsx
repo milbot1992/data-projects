@@ -10,8 +10,9 @@ const FilmRecoSysApp = () => {
   const [userFavouriteFilms, setUserFavouriteFilms] = useState([]);
 
   useEffect(() => {
-    axios.get('https://polar-tundra-59037-60b79b86b2ff.herokuapp.com//trending_now')
+    axios.get('https://polar-tundra-59037-60b79b86b2ff.herokuapp.com/trending_now')
       .then(response => {
+        console.log('>>>>>', response);
         setTrendingFilms(response.data.trending_movies);
       })
       .catch(error => {
@@ -20,7 +21,7 @@ const FilmRecoSysApp = () => {
   }, []);
 
   const fetchRecommendations = (userId) => {
-    axios.get(`https://polar-tundra-59037-60b79b86b2ff.herokuapp.com//recommendations/${userId}`)
+    axios.get(`https://polar-tundra-59037-60b79b86b2ff.herokuapp.com/recommendations/${userId}`)
       .then(response => {
         setRecommendedFilms(response.data.recommended_films);
         setUserFavouriteFilms(response.data.user_favourite_films);
