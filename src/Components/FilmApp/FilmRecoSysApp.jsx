@@ -12,7 +12,6 @@ const FilmRecoSysApp = () => {
   useEffect(() => {
     axios.get('https://polar-tundra-59037-60b79b86b2ff.herokuapp.com/trending_now')
       .then(response => {
-        console.log('>>>>>', response);
         setTrendingFilms(response.data.trending_movies);
       })
       .catch(error => {
