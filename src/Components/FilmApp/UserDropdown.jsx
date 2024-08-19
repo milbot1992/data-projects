@@ -8,7 +8,7 @@ const UserDropdown = ({ onSelectUser }) => {
 
   useEffect(() => {
     // Fetch user IDs from the API
-    axios.get('https://calm-cove-97929-723abfdee814.herokuapp.com/user_ids')
+    axios.get('https://polar-tundra-59037-60b79b86b2ff.herokuapp.com//user_ids')
       .then(response => {
         // Sort user IDs in ascending order
         const sortedUserIds = response.data.user_ids.sort((a, b) => a - b);
